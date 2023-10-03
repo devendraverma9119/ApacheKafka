@@ -1,0 +1,1340 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - LibraryEventControllerIntegrationTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>LibraryEventControllerIntegrationTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.learnkafka.controller.html">com.learnkafka.controller</a> &gt; LibraryEventControllerIntegrationTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">2.682s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">postLibraryEvent()</td>
+<td class="success">2.682s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>00:30:43.328 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Neither @ContextConfiguration nor @ContextHierarchy found for test class [LibraryEventControllerIntegrationTest]: using SpringBootContextLoader
+00:30:43.339 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader -- Could not detect default resource locations for test class [com.learnkafka.controller.LibraryEventControllerIntegrationTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+00:30:43.341 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.learnkafka.controller.LibraryEventControllerIntegrationTest]: LibraryEventControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+00:30:43.407 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Using ContextCustomizers for test class [LibraryEventControllerIntegrationTest]: [EmbeddedKafkaContextCustomizer, DisableObservabilityContextCustomizer, PropertyMappingContextCustomizer, Customizer, ExcludeFilterContextCustomizer, DuplicateJsonObjectContextCustomizer, MockitoContextCustomizer, TestRestTemplateContextCustomizer]
+00:30:43.591 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider -- Identified candidate component class: file [C:\projects\library-events-producer\build\classes\java\main\com\learnkafka\LibraryEventsProducerApplication.class]
+00:30:43.595 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.learnkafka.LibraryEventsProducerApplication for test class com.learnkafka.controller.LibraryEventControllerIntegrationTest
+00:30:43.795 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Using TestExecutionListeners for test class [LibraryEventControllerIntegrationTest]: [ServletTestExecutionListener, DirtiesContextBeforeModesTestExecutionListener, ApplicationEventsTestExecutionListener, MockitoTestExecutionListener, DependencyInjectionTestExecutionListener, DirtiesContextTestExecutionListener, TransactionalTestExecutionListener, SqlScriptsTestExecutionListener, EventPublishingTestExecutionListener, RestDocsTestExecutionListener, MockRestServiceServerResetTestExecutionListener, MockMvcPrintOnlyOnFailureTestExecutionListener, WebDriverTestExecutionListener, MockWebServiceServerTestExecutionListener, ResetMocksTestExecutionListener]
+00:30:43.798 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener -- Before test class: class [LibraryEventControllerIntegrationTest], class annotated with @DirtiesContext [false] with mode [null]
+00:30:43.827 [Test worker] DEBUG org.springframework.test.context.support.DependencyInjectionTestExecutionListener -- Performing dependency injection for test class com.learnkafka.controller.LibraryEventControllerIntegrationTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.0.5)
+
+2023-08-16T00:30:44.944+05:30  INFO 28952 --- [    Test worker] k.utils.Log4jControllerRegistration$     : Registered kafka:type=kafka.Log4jController MBean
+2023-08-16T00:30:44.975+05:30  INFO 28952 --- [    Test worker] o.a.zookeeper.server.ZooKeeperServer     : 
+2023-08-16T00:30:44.975+05:30  INFO 28952 --- [    Test worker] o.a.zookeeper.server.ZooKeeperServer     :   ______                  _                                          
+2023-08-16T00:30:44.975+05:30  INFO 28952 --- [    Test worker] o.a.zookeeper.server.ZooKeeperServer     :  |___  /                 | |                                         
+2023-08-16T00:30:44.975+05:30  INFO 28952 --- [    Test worker] o.a.zookeeper.server.ZooKeeperServer     :     / /    ___     ___   | | __   ___    ___   _ __     ___   _ __   
+2023-08-16T00:30:44.976+05:30  INFO 28952 --- [    Test worker] o.a.zookeeper.server.ZooKeeperServer     :    / /    / _ \   / _ \  | |/ /  / _ \  / _ \ | '_ \   / _ \ | '__|
+2023-08-16T00:30:44.977+05:30  INFO 28952 --- [    Test worker] o.a.zookeeper.server.ZooKeeperServer     :   / /__  | (_) | | (_) | |   &lt;  |  __/ |  __/ | |_) | |  __/ | |    
+2023-08-16T00:30:44.977+05:30  INFO 28952 --- [    Test worker] o.a.zookeeper.server.ZooKeeperServer     :  /_____|  \___/   \___/  |_|\_\  \___|  \___| | .__/   \___| |_|
+2023-08-16T00:30:44.977+05:30  INFO 28952 --- [    Test worker] o.a.zookeeper.server.ZooKeeperServer     :                                               | |                     
+2023-08-16T00:30:44.978+05:30  INFO 28952 --- [    Test worker] o.a.zookeeper.server.ZooKeeperServer     :                                               |_|                     
+2023-08-16T00:30:44.979+05:30  INFO 28952 --- [    Test worker] o.a.zookeeper.server.ZooKeeperServer     : 
+2023-08-16T00:30:45.043+05:30  INFO 28952 --- [    Test worker] o.a.zookeeper.server.ZooKeeperServer     : Server environment:zookeeper.version=3.6.3--6401e4ad2087061bc6b9f80dec2d69f2e3c8660a, built on 04/08/2021 16:35 GMT
+2023-08-16T00:30:45.043+05:30  INFO 28952 --- [    Test worker] o.a.zookeeper.server.ZooKeeperServer     : Server environment:host.name=CWAN-5BZHDB3
+2023-08-16T00:30:45.044+05:30  INFO 28952 --- [    Test worker] o.a.zookeeper.server.ZooKeeperServer     : Server environment:java.version=17.0.8
+2023-08-16T00:30:45.045+05:30  INFO 28952 --- [    Test worker] o.a.zookeeper.server.ZooKeeperServer     : Server environment:java.vendor=Oracle Corporation
+2023-08-16T00:30:45.047+05:30  INFO 28952 --- [    Test worker] o.a.zookeeper.server.ZooKeeperServer     : Server environment:java.home=C:\Program Files\Java\jdk-17
+2023-08-16T00:30:45.047+05:30  INFO 28952 --- [    Test worker] o.a.zookeeper.server.ZooKeeperServer     : Server environment:java.class.path=C:\\Users\\devendraverma\\.gradle\\caches\\8.2.1\\workerMain\\gradle-worker.jar;C:\\projects\\library-events-producer\\build\\classes\\java\\test;C:\\projects\\library-events-producer\\build\\classes\\java\\main;C:\\projects\\library-events-producer\\build\\resources\\main;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.springframework.boot\\spring-boot-starter-web\\3.0.5\\c8f9a85fed134963b69cb2f2a0dcf151047b6cd1\\spring-boot-starter-web-3.0.5.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.springframework.kafka\\spring-kafka\\3.0.5\\83d82bc2d71d3c7ccc1159a550d594a367e9b8c8\\spring-kafka-3.0.5.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.springframework.boot\\spring-boot-starter-validation\\3.0.5\\be7d9c0a45e887e25e25d48e6ea9b23a9c7a16d0\\spring-boot-starter-validation-3.0.5.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.springframework.boot\\spring-boot-starter-test\\3.0.5\\cf9fd5d146ce335eaec708b5bde40445f94ee813\\spring-boot-starter-test-3.0.5.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.springframework.kafka\\spring-kafka-test\\3.0.5\\86d47461f4443664522c32d629a663ae8e332711\\spring-kafka-test-3.0.5.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.springframework.boot\\spring-boot-starter-json\\3.0.5\\d9b191badbcc63083770ba111f9290e45e512a54\\spring-boot-starter-json-3.0.5.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.springframework.boot\\spring-boot-starter\\3.0.5\\5d13714accd45b2b1af0d5de1495b2ed9a49fe89\\spring-boot-starter-3.0.5.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.springframework.boot\\spring-boot-starter-tomcat\\3.0.5\\5dd71e501f2be01a359ef7187e28a523379c23f2\\spring-boot-starter-tomcat-3.0.5.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.springframework\\spring-webmvc\\6.0.7\\2fdde1a0d3706a85fe318a4f6ebffb4f4f7c4c6d\\spring-webmvc-6.0.7.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.springframework\\spring-web\\6.0.7\\43f8ac9c46c15d57fca00fc81ce1f2849f6cecb9\\spring-web-6.0.7.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.springframework.boot\\spring-boot-test-autoconfigure\\3.0.5\\8abab8961ac6a634a9bb1edea4182ab54297c947\\spring-boot-test-autoconfigure-3.0.5.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.springframework.boot\\spring-boot-test\\3.0.5\\2895ed0f90fc2a52fc27172f678ce05c1c256b37\\spring-boot-test-3.0.5.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.springframework.boot\\spring-boot-autoconfigure\\3.0.5\\fa43d48c30a0105562ac8b0fb34e58deaa19737c\\spring-boot-autoconfigure-3.0.5.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.springframework.boot\\spring-boot\\3.0.5\\a2aea9c55893accab2c9f3a987b5b58b277bfd42\\spring-boot-3.0.5.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.springframework\\spring-context\\6.0.7\\439a4cc348c87014fa7ae7d20c6498a10283a6cf\\spring-context-6.0.7.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.springframework\\spring-messaging\\6.0.7\\716f7237ef13b847bed621f9797f76a273a89527\\spring-messaging-6.0.7.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.springframework\\spring-tx\\6.0.7\\d062bbaf50e4acb24edda5202a9732fee38e978b\\spring-tx-6.0.7.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.springframework.retry\\spring-retry\\2.0.1\\7251dcd778aa5338f0866bf8cfbb80f3f2058d97\\spring-retry-2.0.1.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.apache.kafka\\kafka_2.13\\3.3.2\\7fe0de0899fb0bd9c6634ed8cf702382dede0d90\\kafka_2.13-3.3.2.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.apache.kafka\\kafka_2.13\\3.3.2\\85d0cf87763424f6cc7e8f372b9e6868dc84b9c7\\kafka_2.13-3.3.2-test.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.apache.kafka\\kafka-metadata\\3.3.2\\b807bf86435243fad337c8fc15b405c98e539b9a\\kafka-metadata-3.3.2.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.apache.kafka\\kafka-streams-test-utils\\3.3.2\\782aed2a32befa4ea810f899b28b0e22bc1e2784\\kafka-streams-test-utils-3.3.2.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.apache.kafka\\kafka-raft\\3.3.2\\46a77d01cc7c3446eddbde3eec79dcdcea30ad0d\\kafka-raft-3.3.2.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.apache.kafka\\kafka-storage\\3.3.2\\783b0da36192b238f776f89da5f5840bd7f97beb\\kafka-storage-3.3.2.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.apache.kafka\\kafka-server-common\\3.3.2\\decbe2ba4d555e3a0e334603c87b76c955e8962\\kafka-server-common-3.3.2.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.apache.kafka\\kafka-streams\\3.3.2\\446ef91b2cdbd442b66f7e536f3dd1cbf8729b8\\kafka-streams-3.3.2.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.apache.kafka\\kafka-storage-api\\3.3.2\\1b601a87e24eab66897fb8b0841252f263e2ad8c\\kafka-storage-api-3.3.2.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.apache.kafka\\kafka-clients\\3.3.2\\be7a3c50a4026822671bdfe6b53e3987149f951f\\kafka-clients-3.3.2.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.apache.kafka\\kafka-clients\\3.3.2\\3c043878e129f7368d1b06feb999216805b55dc5\\kafka-clients-3.3.2-test.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\io.micrometer\\micrometer-observation\\1.10.5\\88cc220b1480ff39d1744f0413711e82701686a4\\micrometer-observation-1.10.5.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\com.google.code.findbugs\\jsr305\\3.0.2\\25ea2e8b0c338a877313bd4672d3fe056ea78f0d\\jsr305-3.0.2.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.apache.tomcat.embed\\tomcat-embed-el\\10.1.7\\dfaad36190c21beaaefb932333f7d955165810bb\\tomcat-embed-el-10.1.7.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.hibernate.validator\\hibernate-validator\\8.0.0.Final\\8e0389f22a3a246915a3311877da4168256b95d2\\hibernate-validator-8.0.0.Final.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\com.jayway.jsonpath\\json-path\\2.7.0\\f9d7d9659f2694e61142046ff8a216c047f263e8\\json-path-2.7.0.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\jakarta.xml.bind\\jakarta.xml.bind-api\\4.0.0\\bbb399208d288b15ec101fa4fcfc4bd77cedc97a\\jakarta.xml.bind-api-4.0.0.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.assertj\\assertj-core\\3.23.1\\d2bb60570f5b3d7ffa8f8000118c9c07b86eca93\\assertj-core-3.23.1.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.hamcrest\\hamcrest\\2.2\\1820c0968dba3a11a1b30669bb1f01978a91dedc\\hamcrest-2.2.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.mockito\\mockito-junit-jupiter\\4.8.1\\e393aa62eca2244a535b03842843f2f199343d1f\\mockito-junit-jupiter-4.8.1.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.junit.jupiter\\junit-jupiter-params\\5.9.2\\bc2765afb7b85b583c710dd259a11c6b8c39e912\\junit-jupiter-params-5.9.2.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.junit.jupiter\\junit-jupiter-engine\\5.9.2\\572f7a553b53f83ee59cc045ce1c3772864ab76c\\junit-jupiter-engine-5.9.2.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.junit.jupiter\\junit-jupiter-api\\5.9.2\\fed843581520eac594bc36bb4b0f55e7b947dda9\\junit-jupiter-api-5.9.2.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.junit.platform\\junit-platform-launcher\\1.9.2\\38e0bfad8c57d4cd1a8f27926c25ffe9543068d6\\junit-platform-launcher-1.9.2.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.junit.platform\\junit-platform-engine\\1.9.2\\40aeef2be7b04f96bb91e8b054affc28b7c7c935\\junit-platform-engine-1.9.2.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.junit.platform\\junit-platform-commons\\1.9.2\\6f9f8621d8230cd38aa42e58ccbc0c00569131ce\\junit-platform-commons-1.9.2.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.junit.jupiter\\junit-jupiter\\5.9.2\\26c586fbe0ebd81b48c9f11f0d998124248697ae\\junit-jupiter-5.9.2.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.mockito\\mockito-core\\4.8.1\\d8eb9dec8747d08645347bb8c69088ac83197975\\mockito-core-4.8.1.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.skyscreamer\\jsonassert\\1.5.1\\6d842d0faf4cf6725c509a5e5347d319ee0431c3\\jsonassert-1.5.1.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.springframework\\spring-test\\6.0.7\\c0734c4b554ee485b80cdf193f9b9f5e201d29ae\\spring-test-6.0.7.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.springframework\\spring-aop\\6.0.7\\d5b0bb68c88a4027d8e5d42f438088db86f29660\\spring-aop-6.0.7.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.springframework\\spring-beans\\6.0.7\\1abeec454cd1a2a40cff11ed5c388228eb021871\\spring-beans-6.0.7.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.springframework\\spring-expression\\6.0.7\\c9c93c88d35d02a0291ad7051065544fc0b674a3\\spring-expression-6.0.7.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.springframework\\spring-core\\6.0.7\\33ad624acd55c846ec56fd65bd954b23fb2681b3\\spring-core-6.0.7.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.xmlunit\\xmlunit-core\\2.9.1\\e5833662d9a1279a37da3ef6f62a1da29fcd68c4\\xmlunit-core-2.9.1.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.apache.zookeeper\\zookeeper\\3.6.3\\a6e74f826db85ff8c51c15ef0fa2ea0b462aef25\\zookeeper-3.6.3.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.springframework.boot\\spring-boot-starter-logging\\3.0.5\\693455577f6f8c8a53f5992479358e955df74920\\spring-boot-starter-logging-3.0.5.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\jakarta.annotation\\jakarta.annotation-api\\2.1.1\\48b9bda22b091b1f48b13af03fe36db3be6e1ae3\\jakarta.annotation-api-2.1.1.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.yaml\\snakeyaml\\1.33\\2cd0a87ff7df953f810c344bdf2fe3340b954c69\\snakeyaml-1.33.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\com.fasterxml.jackson.datatype\\jackson-datatype-jsr310\\2.14.2\\796518148a385b2728d44886cc0f8852eb8eeb53\\jackson-datatype-jsr310-2.14.2.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\com.fasterxml.jackson.module\\jackson-module-parameter-names\\2.14.2\\2b6c19b3d99dda02915515df879ab9e23fed3864\\jackson-module-parameter-names-2.14.2.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\com.fasterxml.jackson.dataformat\\jackson-dataformat-csv\\2.14.2\\c6201b16c9317197e97368e6c3f696da399d5b0f\\jackson-dataformat-csv-2.14.2.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\com.fasterxml.jackson.module\\jackson-module-scala_2.13\\2.14.2\\478ce3b018edfb16e7ce6debdfd42b9bd79b829d\\jackson-module-scala_2.13-2.14.2.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\com.fasterxml.jackson.core\\jackson-annotations\\2.14.2\\a7aae9525864930723e3453ab799521fdfd9d873\\jackson-annotations-2.14.2.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\com.fasterxml.jackson.core\\jackson-core\\2.14.2\\f804090e6399ce0cf78242db086017512dd71fcc\\jackson-core-2.14.2.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\com.fasterxml.jackson.datatype\\jackson-datatype-jdk8\\2.14.2\\2f3c71211b6ea7a978eba33574d7135d536e07fb\\jackson-datatype-jdk8-2.14.2.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\com.fasterxml.jackson.core\\jackson-databind\\2.14.2\\1e71fddbc80bb86f71a6345ac1e8ab8a00e7134\\jackson-databind-2.14.2.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.apache.tomcat.embed\\tomcat-embed-websocket\\10.1.7\\2dbb5446ecea57d97293e041142534ad314580ea\\tomcat-embed-websocket-10.1.7.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.apache.tomcat.embed\\tomcat-embed-core\\10.1.7\\d486363d49c6536556af38d7e1052d56a39319e5\\tomcat-embed-core-10.1.7.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\com.github.luben\\zstd-jni\\1.5.2-1\\fad786abc1d1b81570e8d9a2fc8a1ef479bc27b6\\zstd-jni-1.5.2-1.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.lz4\\lz4-java\\1.8.0\\4b986a99445e49ea5fbf5d149c4b63f6ed6c6780\\lz4-java-1.8.0.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.xerial.snappy\\snappy-java\\1.1.8.4\\66f0d56454509f6e36175f2331572e250e04a6cc\\snappy-java-1.1.8.4.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\com.yammer.metrics\\metrics-core\\2.2.0\\f82c035cfa786d3cbec362c38c22a5f5b1bc8724\\metrics-core-2.2.0.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.bitbucket.b_c\\jose4j\\0.7.9\\b44a2235728ab1cad9ffd06013500f09a5f1d241\\jose4j-0.7.9.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\com.typesafe.scala-logging\\scala-logging_2.13\\3.9.4\\e5838ddcf8c1c2b612a7956b9f80423a508675db\\scala-logging_2.13-3.9.4.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\io.dropwizard.metrics\\metrics-core\\4.2.18\\616b1bcf7ce3e45d1a49236f8aba4993d1897048\\metrics-core-4.2.18.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\ch.qos.logback\\logback-classic\\1.4.6\\61f81fe5d996f077f90a08ff5ca75d01dbe752c3\\logback-classic-1.4.6.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.apache.logging.log4j\\log4j-to-slf4j\\2.19.0\\30f4812e43172ecca5041da2cb6b965cc4777c19\\log4j-to-slf4j-2.19.0.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.slf4j\\jul-to-slf4j\\2.0.7\\a48f44aeaa8a5ddc347007298a28173ac1fbbd8b\\jul-to-slf4j-2.0.7.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.slf4j\\slf4j-api\\2.0.7\\41eb7184ea9d556f23e18b5cb99cad1f8581fc00\\slf4j-api-2.0.7.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\io.micrometer\\micrometer-commons\\1.10.5\\bb78821020b0e6008e62ee919702b8d4249794d5\\micrometer-commons-1.10.5.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\jakarta.validation\\jakarta.validation-api\\3.0.2\\92b6631659ba35ca09e44874d3eb936edfeee532\\jakarta.validation-api-3.0.2.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.jboss.logging\\jboss-logging\\3.5.0.Final\\c19307cc11f28f5e2679347e633a3294d865334d\\jboss-logging-3.5.0.Final.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\com.fasterxml\\classmate\\1.5.1\\3fe0bed568c62df5e89f4f174c101eab25345b6c\\classmate-1.5.1.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\net.minidev\\json-smart\\2.4.10\\91cb329e9424bf32131eeb1ce2d17bf31b9899bc\\json-smart-2.4.10.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\jakarta.activation\\jakarta.activation-api\\2.1.1\\88c774ab863a21fb2fc4219af95379fafe499a31\\jakarta.activation-api-2.1.1.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\net.bytebuddy\\byte-buddy\\1.12.23\\d470526e8c4566c04e9ae5d3ccb62d1a7aa58986\\byte-buddy-1.12.23.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\net.bytebuddy\\byte-buddy-agent\\1.12.23\\1cba11fdb72c383edacb909f79ae6870efd275e4\\byte-buddy-agent-1.12.23.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.objenesis\\objenesis\\3.2\\7fadf57620c8b8abdf7519533e5527367cb51f09\\objenesis-3.2.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\com.vaadin.external.google\\android-json\\0.0.20131108.vaadin1\\fa26d351fe62a6a17f5cda1287c1c6110dec413f\\android-json-0.0.20131108.vaadin1.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.springframework\\spring-jcl\\6.0.7\\6250e61ccf71b83204669e0501533278ef7888f8\\spring-jcl-6.0.7.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.apache.zookeeper\\zookeeper-jute\\3.6.3\\8990d19ec3db01f45f82d4011a11b085db66de05\\zookeeper-jute-3.6.3.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.apache.yetus\\audience-annotations\\0.5.0\\55762d3191a8d6610ef46d11e8cb70c7667342a3\\audience-annotations-0.5.0.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\io.netty\\netty-handler\\4.1.90.Final\\64f6946ce4d9189cec5341d3f5f86ac5653099b5\\netty-handler-4.1.90.Final.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\io.netty\\netty-transport-native-epoll\\4.1.90.Final\\54b171fb0081870267a2810b8d2f84cfd23ea628\\netty-transport-native-epoll-4.1.90.Final.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\net.sourceforge.argparse4j\\argparse4j\\0.7.0\\6f0621d0c3888de39e0f06d01f37ba53a798e657\\argparse4j-0.7.0.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\net.sf.jopt-simple\\jopt-simple\\5.0.4\\4fdac2fbe92dfad86aa6e9301736f6b4342a3f5c\\jopt-simple-5.0.4.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.scala-lang.modules\\scala-collection-compat_2.13\\2.6.0\\6d987634f6bd6b9451f4789c6022c2115733a0de\\scala-collection-compat_2.13-2.6.0.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.scala-lang.modules\\scala-java8-compat_2.13\\1.0.2\\5b54f60ccf03e41e24c466462a72475ee918c304\\scala-java8-compat_2.13-1.0.2.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.scala-lang\\scala-reflect\\2.13.8\\994b004d041b18724ec298a135c37e7817d369ec\\scala-reflect-2.13.8.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\commons-cli\\commons-cli\\1.4\\c51c00206bb913cd8612b24abd9fa98ae89719b1\\commons-cli-1.4.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.scala-lang\\scala-library\\2.13.10\\67c1afabaea9ba51321159e70a78515647e1b73d\\scala-library-2.13.10.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.opentest4j\\opentest4j\\1.2.0\\28c11eb91f9b6d8e200631d46e20a7f407f2a046\\opentest4j-1.2.0.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\net.minidev\\accessors-smart\\2.4.9\\32e540749224c22c9b17de8137e916aae9057e22\\accessors-smart-2.4.9.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\io.netty\\netty-transport-classes-epoll\\4.1.90.Final\\2c925c90779d6193ea91973b73ca7ead38ec25a2\\netty-transport-classes-epoll-4.1.90.Final.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\io.netty\\netty-transport-native-unix-common\\4.1.90.Final\\e42282002cf22105e7e993651aead231246d0220\\netty-transport-native-unix-common-4.1.90.Final.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\io.netty\\netty-codec\\4.1.90.Final\\9992a22c82e18b8fd4f34989535f3e504e55aa37\\netty-codec-4.1.90.Final.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\io.netty\\netty-transport\\4.1.90.Final\\82d68da212f62b076c763f5efa9b072d2abc018f\\netty-transport-4.1.90.Final.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\io.netty\\netty-resolver\\4.1.90.Final\\47c415d8c83f08b820ba00e6497a6cf19dd0155f\\netty-resolver-4.1.90.Final.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\io.netty\\netty-buffer\\4.1.90.Final\\937eb60c19c5f5c1326b96123c9ec3d33238d4d5\\netty-buffer-4.1.90.Final.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\io.netty\\netty-common\\4.1.90.Final\\43597a09382c6ae2bef469a9b3a41e8a17850638\\netty-common-4.1.90.Final.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.rocksdb\\rocksdbjni\\7.1.2\\ffe87d1c5d5b3a46d065cc4cf5311f18d8233a6b\\rocksdbjni-7.1.2.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\com.thoughtworks.paranamer\\paranamer\\2.8\\619eba74c19ccf1da8ebec97a2d7f8ba05773dd6\\paranamer-2.8.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\ch.qos.logback\\logback-core\\1.4.6\\c4eb386f0fe83d61c2e8a91df50bb07e7ea95140\\logback-core-1.4.6.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.apache.logging.log4j\\log4j-api\\2.19.0\\ea1b37f38c327596b216542bc636cfdc0b8036fa\\log4j-api-2.19.0.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.ow2.asm\\asm\\9.3\\8e6300ef51c1d801a7ed62d07cd221aca3a90640\\asm-9.3.jar
+2023-08-16T00:30:45.051+05:30  INFO 28952 --- [    Test worker] o.a.zookeeper.server.ZooKeeperServer     : Server environment:java.library.path=C:\Program Files\Java\jdk-17\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Python311\Scripts\;C:\Python311\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\Java\jdk-17\bin;C:\Program Files\Git\cmd;C:\ProgramData\chocolatey\bin;C:\Program Files\nvm;C:\Program Files\nodejs;C:\Users\devendraverma\AppData\Local\Microsoft\WindowsApps;C:\Users\devendraverma\AppData\Local\Programs\Git\cmd;C:\Users\devendraverma\AppData\Roaming\npm;C:\Users\devendraverma\AppData\Local\Programs\Microsoft VS Code\bin;.
+2023-08-16T00:30:45.051+05:30  INFO 28952 --- [    Test worker] o.a.zookeeper.server.ZooKeeperServer     : Server environment:java.io.tmpdir=C:\Users\DEVEND~1\AppData\Local\Temp\
+2023-08-16T00:30:45.051+05:30  INFO 28952 --- [    Test worker] o.a.zookeeper.server.ZooKeeperServer     : Server environment:java.compiler=&lt;NA&gt;
+2023-08-16T00:30:45.051+05:30  INFO 28952 --- [    Test worker] o.a.zookeeper.server.ZooKeeperServer     : Server environment:os.name=Windows 10
+2023-08-16T00:30:45.052+05:30  INFO 28952 --- [    Test worker] o.a.zookeeper.server.ZooKeeperServer     : Server environment:os.arch=amd64
+2023-08-16T00:30:45.053+05:30  INFO 28952 --- [    Test worker] o.a.zookeeper.server.ZooKeeperServer     : Server environment:os.version=10.0
+2023-08-16T00:30:45.054+05:30  INFO 28952 --- [    Test worker] o.a.zookeeper.server.ZooKeeperServer     : Server environment:user.name=devendraverma
+2023-08-16T00:30:45.054+05:30  INFO 28952 --- [    Test worker] o.a.zookeeper.server.ZooKeeperServer     : Server environment:user.home=C:\Users\devendraverma
+2023-08-16T00:30:45.054+05:30  INFO 28952 --- [    Test worker] o.a.zookeeper.server.ZooKeeperServer     : Server environment:user.dir=C:\projects\library-events-producer
+2023-08-16T00:30:45.055+05:30  INFO 28952 --- [    Test worker] o.a.zookeeper.server.ZooKeeperServer     : Server environment:os.memory.free=25MB
+2023-08-16T00:30:45.055+05:30  INFO 28952 --- [    Test worker] o.a.zookeeper.server.ZooKeeperServer     : Server environment:os.memory.max=512MB
+2023-08-16T00:30:45.056+05:30  INFO 28952 --- [    Test worker] o.a.zookeeper.server.ZooKeeperServer     : Server environment:os.memory.total=57MB
+2023-08-16T00:30:45.057+05:30  INFO 28952 --- [    Test worker] o.a.zookeeper.server.ZooKeeperServer     : zookeeper.enableEagerACLCheck = false
+2023-08-16T00:30:45.060+05:30  INFO 28952 --- [    Test worker] o.a.zookeeper.server.ZooKeeperServer     : zookeeper.digest.enabled = true
+2023-08-16T00:30:45.061+05:30  INFO 28952 --- [    Test worker] o.a.zookeeper.server.ZooKeeperServer     : zookeeper.closeSessionTxn.enabled = true
+2023-08-16T00:30:45.061+05:30  INFO 28952 --- [    Test worker] o.a.zookeeper.server.ZooKeeperServer     : zookeeper.flushDelay=0
+2023-08-16T00:30:45.062+05:30  INFO 28952 --- [    Test worker] o.a.zookeeper.server.ZooKeeperServer     : zookeeper.maxWriteQueuePollTime=0
+2023-08-16T00:30:45.062+05:30  INFO 28952 --- [    Test worker] o.a.zookeeper.server.ZooKeeperServer     : zookeeper.maxBatchSize=1000
+2023-08-16T00:30:45.062+05:30  INFO 28952 --- [    Test worker] o.a.zookeeper.server.ZooKeeperServer     : zookeeper.intBufferStartingSizeBytes = 1024
+2023-08-16T00:30:45.067+05:30  INFO 28952 --- [    Test worker] o.a.z.server.persistence.FileTxnSnapLog  : zookeeper.snapshot.trust.empty : false
+2023-08-16T00:30:45.103+05:30  INFO 28952 --- [    Test worker] o.a.z.server.watch.WatchManagerFactory   : Using org.apache.zookeeper.server.watch.WatchManager as watch manager
+2023-08-16T00:30:45.103+05:30  INFO 28952 --- [    Test worker] o.a.z.server.watch.WatchManagerFactory   : Using org.apache.zookeeper.server.watch.WatchManager as watch manager
+2023-08-16T00:30:45.104+05:30  INFO 28952 --- [    Test worker] org.apache.zookeeper.server.ZKDatabase   : zookeeper.snapshotSizeFactor = 0.33
+2023-08-16T00:30:45.105+05:30  INFO 28952 --- [    Test worker] org.apache.zookeeper.server.ZKDatabase   : zookeeper.commitLogCount=500
+2023-08-16T00:30:45.111+05:30  INFO 28952 --- [    Test worker] o.apache.zookeeper.server.BlueThrottle   : Weighed connection throttling is disabled
+2023-08-16T00:30:45.115+05:30  INFO 28952 --- [    Test worker] o.a.zookeeper.server.ZooKeeperServer     : minSessionTimeout set to 1600
+2023-08-16T00:30:45.116+05:30  INFO 28952 --- [    Test worker] o.a.zookeeper.server.ZooKeeperServer     : maxSessionTimeout set to 16000
+2023-08-16T00:30:45.118+05:30  INFO 28952 --- [    Test worker] o.apache.zookeeper.server.ResponseCache  : Response cache size is initialized with value 400.
+2023-08-16T00:30:45.118+05:30  INFO 28952 --- [    Test worker] o.apache.zookeeper.server.ResponseCache  : Response cache size is initialized with value 400.
+2023-08-16T00:30:45.120+05:30  INFO 28952 --- [    Test worker] o.a.z.s.u.RequestPathMetricsCollector    : zookeeper.pathStats.slotCapacity = 60
+2023-08-16T00:30:45.121+05:30  INFO 28952 --- [    Test worker] o.a.z.s.u.RequestPathMetricsCollector    : zookeeper.pathStats.slotDuration = 15
+2023-08-16T00:30:45.121+05:30  INFO 28952 --- [    Test worker] o.a.z.s.u.RequestPathMetricsCollector    : zookeeper.pathStats.maxDepth = 6
+2023-08-16T00:30:45.121+05:30  INFO 28952 --- [    Test worker] o.a.z.s.u.RequestPathMetricsCollector    : zookeeper.pathStats.initialDelay = 5
+2023-08-16T00:30:45.121+05:30  INFO 28952 --- [    Test worker] o.a.z.s.u.RequestPathMetricsCollector    : zookeeper.pathStats.delay = 5
+2023-08-16T00:30:45.121+05:30  INFO 28952 --- [    Test worker] o.a.z.s.u.RequestPathMetricsCollector    : zookeeper.pathStats.enabled = false
+2023-08-16T00:30:45.128+05:30  INFO 28952 --- [    Test worker] o.a.zookeeper.server.ZooKeeperServer     : The max bytes for all large requests are set to 104857600
+2023-08-16T00:30:45.128+05:30  INFO 28952 --- [    Test worker] o.a.zookeeper.server.ZooKeeperServer     : The large request threshold is set to -1
+2023-08-16T00:30:45.129+05:30  INFO 28952 --- [    Test worker] o.a.zookeeper.server.ZooKeeperServer     : Created server with tickTime 800 minSessionTimeout 1600 maxSessionTimeout 16000 clientPortListenBacklog -1 datadir C:\Users\DEVEND~1\AppData\Local\Temp\kafka-132260111072985137\version-2 snapdir C:\Users\DEVEND~1\AppData\Local\Temp\kafka-13703942155771748989\version-2
+2023-08-16T00:30:45.144+05:30  WARN 28952 --- [    Test worker] o.a.zookeeper.server.ServerCnxnFactory   : maxCnxns is not configured, using default value 0.
+2023-08-16T00:30:45.148+05:30  INFO 28952 --- [    Test worker] o.a.z.server.NIOServerCnxnFactory        : Configuring NIO connection handler with 10s sessionless connection timeout, 2 selector thread(s), 16 worker threads, and 64 kB direct buffers.
+2023-08-16T00:30:45.161+05:30  INFO 28952 --- [    Test worker] o.a.z.server.NIOServerCnxnFactory        : binding to port /127.0.0.1:0
+2023-08-16T00:30:45.202+05:30  INFO 28952 --- [    Test worker] o.a.z.server.persistence.SnapStream      : zookeeper.snapshot.compression.method = CHECKED
+2023-08-16T00:30:45.203+05:30  INFO 28952 --- [    Test worker] o.a.z.server.persistence.FileTxnSnapLog  : Snapshotting: 0x0 to C:\Users\DEVEND~1\AppData\Local\Temp\kafka-13703942155771748989\version-2\snapshot.0
+2023-08-16T00:30:45.212+05:30  INFO 28952 --- [    Test worker] org.apache.zookeeper.server.ZKDatabase   : Snapshot loaded in 40 ms, highest zxid is 0x0, digest is 1371985504
+2023-08-16T00:30:45.212+05:30  INFO 28952 --- [    Test worker] o.a.z.server.persistence.FileTxnSnapLog  : Snapshotting: 0x0 to C:\Users\DEVEND~1\AppData\Local\Temp\kafka-13703942155771748989\version-2\snapshot.0
+2023-08-16T00:30:45.215+05:30  INFO 28952 --- [    Test worker] o.a.zookeeper.server.ZooKeeperServer     : Snapshot taken in 2 ms
+2023-08-16T00:30:45.235+05:30  INFO 28952 --- [0 cport:62003):] o.a.z.server.PrepRequestProcessor        : PrepRequestProcessor (sid:0) started, reconfigEnabled=false
+2023-08-16T00:30:45.235+05:30  INFO 28952 --- [    Test worker] o.a.zookeeper.server.RequestThrottler    : zookeeper.request_throttler.shutdownTimeout = 10000
+2023-08-16T00:30:45.594+05:30  INFO 28952 --- [    Test worker] kafka.server.KafkaConfig                 : KafkaConfig values: 
+	advertised.listeners = null
+	alter.config.policy.class.name = null
+	alter.log.dirs.replication.quota.window.num = 11
+	alter.log.dirs.replication.quota.window.size.seconds = 1
+	authorizer.class.name = 
+	auto.create.topics.enable = true
+	auto.leader.rebalance.enable = true
+	background.threads = 10
+	broker.heartbeat.interval.ms = 2000
+	broker.id = 0
+	broker.id.generation.enable = true
+	broker.rack = null
+	broker.session.timeout.ms = 9000
+	client.quota.callback.class = null
+	compression.type = producer
+	connection.failed.authentication.delay.ms = 100
+	connections.max.idle.ms = 600000
+	connections.max.reauth.ms = 0
+	control.plane.listener.name = null
+	controlled.shutdown.enable = false
+	controlled.shutdown.max.retries = 3
+	controlled.shutdown.retry.backoff.ms = 100
+	controller.listener.names = null
+	controller.quorum.append.linger.ms = 25
+	controller.quorum.election.backoff.max.ms = 1000
+	controller.quorum.election.timeout.ms = 1000
+	controller.quorum.fetch.timeout.ms = 2000
+	controller.quorum.request.timeout.ms = 2000
+	controller.quorum.retry.backoff.ms = 20
+	controller.quorum.voters = []
+	controller.quota.window.num = 11
+	controller.quota.window.size.seconds = 1
+	controller.socket.timeout.ms = 1000
+	create.topic.policy.class.name = null
+	default.replication.factor = 1
+	delegation.token.expiry.check.interval.ms = 3600000
+	delegation.token.expiry.time.ms = 86400000
+	delegation.token.master.key = null
+	delegation.token.max.lifetime.ms = 604800000
+	delegation.token.secret.key = null
+	delete.records.purgatory.purge.interval.requests = 1
+	delete.topic.enable = true
+	early.start.listeners = null
+	fetch.max.bytes = 57671680
+	fetch.purgatory.purge.interval.requests = 1000
+	group.initial.rebalance.delay.ms = 0
+	group.max.session.timeout.ms = 1800000
+	group.max.size = 2147483647
+	group.min.session.timeout.ms = 6000
+	initial.broker.registration.timeout.ms = 60000
+	inter.broker.listener.name = null
+	inter.broker.protocol.version = 3.3-IV3
+	kafka.metrics.polling.interval.secs = 10
+	kafka.metrics.reporters = []
+	leader.imbalance.check.interval.seconds = 300
+	leader.imbalance.per.broker.percentage = 10
+	listener.security.protocol.map = PLAINTEXT:PLAINTEXT,SSL:SSL,SASL_PLAINTEXT:SASL_PLAINTEXT,SASL_SSL:SASL_SSL
+	listeners = PLAINTEXT://localhost:0
+	log.cleaner.backoff.ms = 15000
+	log.cleaner.dedupe.buffer.size = 2097152
+	log.cleaner.delete.retention.ms = 86400000
+	log.cleaner.enable = true
+	log.cleaner.io.buffer.load.factor = 0.9
+	log.cleaner.io.buffer.size = 524288
+	log.cleaner.io.max.bytes.per.second = 1.7976931348623157E308
+	log.cleaner.max.compaction.lag.ms = 9223372036854775807
+	log.cleaner.min.cleanable.ratio = 0.5
+	log.cleaner.min.compaction.lag.ms = 0
+	log.cleaner.threads = 1
+	log.cleanup.policy = [delete]
+	log.dir = C:\Users\DEVEND~1\AppData\Local\Temp\spring.kafka.caf80c4a-62fd-48a5-9f65-62494aa372232350185087413006166
+	log.dirs = null
+	log.flush.interval.messages = 9223372036854775807
+	log.flush.interval.ms = null
+	log.flush.offset.checkpoint.interval.ms = 60000
+	log.flush.scheduler.interval.ms = 9223372036854775807
+	log.flush.start.offset.checkpoint.interval.ms = 60000
+	log.index.interval.bytes = 4096
+	log.index.size.max.bytes = 10485760
+	log.message.downconversion.enable = true
+	log.message.format.version = 3.0-IV1
+	log.message.timestamp.difference.max.ms = 9223372036854775807
+	log.message.timestamp.type = CreateTime
+	log.preallocate = false
+	log.retention.bytes = -1
+	log.retention.check.interval.ms = 300000
+	log.retention.hours = 168
+	log.retention.minutes = null
+	log.retention.ms = null
+	log.roll.hours = 168
+	log.roll.jitter.hours = 0
+	log.roll.jitter.ms = null
+	log.roll.ms = null
+	log.segment.bytes = 1073741824
+	log.segment.delete.delay.ms = 1000
+	max.connection.creation.rate = 2147483647
+	max.connections = 2147483647
+	max.connections.per.ip = 2147483647
+	max.connections.per.ip.overrides = 
+	max.incremental.fetch.session.cache.slots = 1000
+	message.max.bytes = 1048588
+	metadata.log.dir = null
+	metadata.log.max.record.bytes.between.snapshots = 20971520
+	metadata.log.segment.bytes = 1073741824
+	metadata.log.segment.min.bytes = 8388608
+	metadata.log.segment.ms = 604800000
+	metadata.max.idle.interval.ms = 500
+	metadata.max.retention.bytes = -1
+	metadata.max.retention.ms = 604800000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	min.insync.replicas = 1
+	node.id = 0
+	num.io.threads = 8
+	num.network.threads = 3
+	num.partitions = 3
+	num.recovery.threads.per.data.dir = 1
+	num.replica.alter.log.dirs.threads = null
+	num.replica.fetchers = 1
+	offset.metadata.max.bytes = 4096
+	offsets.commit.required.acks = -1
+	offsets.commit.timeout.ms = 5000
+	offsets.load.buffer.size = 5242880
+	offsets.retention.check.interval.ms = 600000
+	offsets.retention.minutes = 10080
+	offsets.topic.compression.codec = 0
+	offsets.topic.num.partitions = 5
+	offsets.topic.replication.factor = 1
+	offsets.topic.segment.bytes = 104857600
+	password.encoder.cipher.algorithm = AES/CBC/PKCS5Padding
+	password.encoder.iterations = 4096
+	password.encoder.key.length = 128
+	password.encoder.keyfactory.algorithm = null
+	password.encoder.old.secret = null
+	password.encoder.secret = null
+	principal.builder.class = class org.apache.kafka.common.security.authenticator.DefaultKafkaPrincipalBuilder
+	process.roles = []
+	producer.purgatory.purge.interval.requests = 1000
+	queued.max.request.bytes = -1
+	queued.max.requests = 500
+	quota.window.num = 11
+	quota.window.size.seconds = 1
+	remote.log.index.file.cache.total.size.bytes = 1073741824
+	remote.log.manager.task.interval.ms = 30000
+	remote.log.manager.task.retry.backoff.max.ms = 30000
+	remote.log.manager.task.retry.backoff.ms = 500
+	remote.log.manager.task.retry.jitter = 0.2
+	remote.log.manager.thread.pool.size = 10
+	remote.log.metadata.manager.class.name = null
+	remote.log.metadata.manager.class.path = null
+	remote.log.metadata.manager.impl.prefix = null
+	remote.log.metadata.manager.listener.name = null
+	remote.log.reader.max.pending.tasks = 100
+	remote.log.reader.threads = 10
+	remote.log.storage.manager.class.name = null
+	remote.log.storage.manager.class.path = null
+	remote.log.storage.manager.impl.prefix = null
+	remote.log.storage.system.enable = false
+	replica.fetch.backoff.ms = 1000
+	replica.fetch.max.bytes = 1048576
+	replica.fetch.min.bytes = 1
+	replica.fetch.response.max.bytes = 10485760
+	replica.fetch.wait.max.ms = 500
+	replica.high.watermark.checkpoint.interval.ms = 9223372036854775807
+	replica.lag.time.max.ms = 30000
+	replica.selector.class = null
+	replica.socket.receive.buffer.bytes = 65536
+	replica.socket.timeout.ms = 1000
+	replication.quota.window.num = 11
+	replication.quota.window.size.seconds = 1
+	request.timeout.ms = 30000
+	reserved.broker.max.id = 1000
+	sasl.client.callback.handler.class = null
+	sasl.enabled.mechanisms = [GSSAPI]
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.principal.to.local.rules = [DEFAULT]
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism.controller.protocol = GSSAPI
+	sasl.mechanism.inter.broker.protocol = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	sasl.server.callback.handler.class = null
+	sasl.server.max.receive.size = 524288
+	security.inter.broker.protocol = PLAINTEXT
+	security.providers = null
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	socket.listen.backlog.size = 50
+	socket.receive.buffer.bytes = 102400
+	socket.request.max.bytes = 104857600
+	socket.send.buffer.bytes = 102400
+	ssl.cipher.suites = []
+	ssl.client.auth = none
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.principal.mapping.rules = DEFAULT
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.abort.timed.out.transaction.cleanup.interval.ms = 10000
+	transaction.max.timeout.ms = 900000
+	transaction.remove.expired.transaction.cleanup.interval.ms = 3600000
+	transaction.state.log.load.buffer.size = 5242880
+	transaction.state.log.min.isr = 2
+	transaction.state.log.num.partitions = 50
+	transaction.state.log.replication.factor = 3
+	transaction.state.log.segment.bytes = 104857600
+	transactional.id.expiration.ms = 604800000
+	unclean.leader.election.enable = false
+	zookeeper.clientCnxnSocket = null
+	zookeeper.connect = 127.0.0.1:62003
+	zookeeper.connection.timeout.ms = 10000
+	zookeeper.max.in.flight.requests = 10
+	zookeeper.session.timeout.ms = 18000
+	zookeeper.set.acl = false
+	zookeeper.ssl.cipher.suites = null
+	zookeeper.ssl.client.enable = false
+	zookeeper.ssl.crl.enable = false
+	zookeeper.ssl.enabled.protocols = null
+	zookeeper.ssl.endpoint.identification.algorithm = HTTPS
+	zookeeper.ssl.keystore.location = null
+	zookeeper.ssl.keystore.password = null
+	zookeeper.ssl.keystore.type = null
+	zookeeper.ssl.ocsp.enable = false
+	zookeeper.ssl.protocol = TLSv1.2
+	zookeeper.ssl.truststore.location = null
+	zookeeper.ssl.truststore.password = null
+	zookeeper.ssl.truststore.type = null
+
+2023-08-16T00:30:45.638+05:30  INFO 28952 --- [    Test worker] org.apache.zookeeper.common.X509Util     : Setting -D jdk.tls.rejectClientInitiatedRenegotiation=true to disable client-initiated TLS renegotiation
+2023-08-16T00:30:45.765+05:30  INFO 28952 --- [    Test worker] kafka.server.KafkaServer                 : starting
+2023-08-16T00:30:45.765+05:30  INFO 28952 --- [    Test worker] kafka.server.KafkaServer                 : Connecting to zookeeper on 127.0.0.1:62003
+2023-08-16T00:30:45.790+05:30  INFO 28952 --- [    Test worker] kafka.zookeeper.ZooKeeperClient          : [ZooKeeperClient Kafka server] Initializing a new session to 127.0.0.1:62003.
+2023-08-16T00:30:45.796+05:30  INFO 28952 --- [    Test worker] org.apache.zookeeper.ZooKeeper           : Client environment:zookeeper.version=3.6.3--6401e4ad2087061bc6b9f80dec2d69f2e3c8660a, built on 04/08/2021 16:35 GMT
+2023-08-16T00:30:45.796+05:30  INFO 28952 --- [    Test worker] org.apache.zookeeper.ZooKeeper           : Client environment:host.name=CWAN-5BZHDB3
+2023-08-16T00:30:45.796+05:30  INFO 28952 --- [    Test worker] org.apache.zookeeper.ZooKeeper           : Client environment:java.version=17.0.8
+2023-08-16T00:30:45.796+05:30  INFO 28952 --- [    Test worker] org.apache.zookeeper.ZooKeeper           : Client environment:java.vendor=Oracle Corporation
+2023-08-16T00:30:45.796+05:30  INFO 28952 --- [    Test worker] org.apache.zookeeper.ZooKeeper           : Client environment:java.home=C:\Program Files\Java\jdk-17
+2023-08-16T00:30:45.797+05:30  INFO 28952 --- [    Test worker] org.apache.zookeeper.ZooKeeper           : Client environment:java.class.path=C:\\Users\\devendraverma\\.gradle\\caches\\8.2.1\\workerMain\\gradle-worker.jar;C:\\projects\\library-events-producer\\build\\classes\\java\\test;C:\\projects\\library-events-producer\\build\\classes\\java\\main;C:\\projects\\library-events-producer\\build\\resources\\main;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.springframework.boot\\spring-boot-starter-web\\3.0.5\\c8f9a85fed134963b69cb2f2a0dcf151047b6cd1\\spring-boot-starter-web-3.0.5.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.springframework.kafka\\spring-kafka\\3.0.5\\83d82bc2d71d3c7ccc1159a550d594a367e9b8c8\\spring-kafka-3.0.5.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.springframework.boot\\spring-boot-starter-validation\\3.0.5\\be7d9c0a45e887e25e25d48e6ea9b23a9c7a16d0\\spring-boot-starter-validation-3.0.5.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.springframework.boot\\spring-boot-starter-test\\3.0.5\\cf9fd5d146ce335eaec708b5bde40445f94ee813\\spring-boot-starter-test-3.0.5.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.springframework.kafka\\spring-kafka-test\\3.0.5\\86d47461f4443664522c32d629a663ae8e332711\\spring-kafka-test-3.0.5.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.springframework.boot\\spring-boot-starter-json\\3.0.5\\d9b191badbcc63083770ba111f9290e45e512a54\\spring-boot-starter-json-3.0.5.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.springframework.boot\\spring-boot-starter\\3.0.5\\5d13714accd45b2b1af0d5de1495b2ed9a49fe89\\spring-boot-starter-3.0.5.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.springframework.boot\\spring-boot-starter-tomcat\\3.0.5\\5dd71e501f2be01a359ef7187e28a523379c23f2\\spring-boot-starter-tomcat-3.0.5.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.springframework\\spring-webmvc\\6.0.7\\2fdde1a0d3706a85fe318a4f6ebffb4f4f7c4c6d\\spring-webmvc-6.0.7.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.springframework\\spring-web\\6.0.7\\43f8ac9c46c15d57fca00fc81ce1f2849f6cecb9\\spring-web-6.0.7.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.springframework.boot\\spring-boot-test-autoconfigure\\3.0.5\\8abab8961ac6a634a9bb1edea4182ab54297c947\\spring-boot-test-autoconfigure-3.0.5.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.springframework.boot\\spring-boot-test\\3.0.5\\2895ed0f90fc2a52fc27172f678ce05c1c256b37\\spring-boot-test-3.0.5.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.springframework.boot\\spring-boot-autoconfigure\\3.0.5\\fa43d48c30a0105562ac8b0fb34e58deaa19737c\\spring-boot-autoconfigure-3.0.5.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.springframework.boot\\spring-boot\\3.0.5\\a2aea9c55893accab2c9f3a987b5b58b277bfd42\\spring-boot-3.0.5.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.springframework\\spring-context\\6.0.7\\439a4cc348c87014fa7ae7d20c6498a10283a6cf\\spring-context-6.0.7.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.springframework\\spring-messaging\\6.0.7\\716f7237ef13b847bed621f9797f76a273a89527\\spring-messaging-6.0.7.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.springframework\\spring-tx\\6.0.7\\d062bbaf50e4acb24edda5202a9732fee38e978b\\spring-tx-6.0.7.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.springframework.retry\\spring-retry\\2.0.1\\7251dcd778aa5338f0866bf8cfbb80f3f2058d97\\spring-retry-2.0.1.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.apache.kafka\\kafka_2.13\\3.3.2\\7fe0de0899fb0bd9c6634ed8cf702382dede0d90\\kafka_2.13-3.3.2.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.apache.kafka\\kafka_2.13\\3.3.2\\85d0cf87763424f6cc7e8f372b9e6868dc84b9c7\\kafka_2.13-3.3.2-test.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.apache.kafka\\kafka-metadata\\3.3.2\\b807bf86435243fad337c8fc15b405c98e539b9a\\kafka-metadata-3.3.2.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.apache.kafka\\kafka-streams-test-utils\\3.3.2\\782aed2a32befa4ea810f899b28b0e22bc1e2784\\kafka-streams-test-utils-3.3.2.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.apache.kafka\\kafka-raft\\3.3.2\\46a77d01cc7c3446eddbde3eec79dcdcea30ad0d\\kafka-raft-3.3.2.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.apache.kafka\\kafka-storage\\3.3.2\\783b0da36192b238f776f89da5f5840bd7f97beb\\kafka-storage-3.3.2.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.apache.kafka\\kafka-server-common\\3.3.2\\decbe2ba4d555e3a0e334603c87b76c955e8962\\kafka-server-common-3.3.2.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.apache.kafka\\kafka-streams\\3.3.2\\446ef91b2cdbd442b66f7e536f3dd1cbf8729b8\\kafka-streams-3.3.2.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.apache.kafka\\kafka-storage-api\\3.3.2\\1b601a87e24eab66897fb8b0841252f263e2ad8c\\kafka-storage-api-3.3.2.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.apache.kafka\\kafka-clients\\3.3.2\\be7a3c50a4026822671bdfe6b53e3987149f951f\\kafka-clients-3.3.2.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.apache.kafka\\kafka-clients\\3.3.2\\3c043878e129f7368d1b06feb999216805b55dc5\\kafka-clients-3.3.2-test.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\io.micrometer\\micrometer-observation\\1.10.5\\88cc220b1480ff39d1744f0413711e82701686a4\\micrometer-observation-1.10.5.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\com.google.code.findbugs\\jsr305\\3.0.2\\25ea2e8b0c338a877313bd4672d3fe056ea78f0d\\jsr305-3.0.2.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.apache.tomcat.embed\\tomcat-embed-el\\10.1.7\\dfaad36190c21beaaefb932333f7d955165810bb\\tomcat-embed-el-10.1.7.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.hibernate.validator\\hibernate-validator\\8.0.0.Final\\8e0389f22a3a246915a3311877da4168256b95d2\\hibernate-validator-8.0.0.Final.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\com.jayway.jsonpath\\json-path\\2.7.0\\f9d7d9659f2694e61142046ff8a216c047f263e8\\json-path-2.7.0.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\jakarta.xml.bind\\jakarta.xml.bind-api\\4.0.0\\bbb399208d288b15ec101fa4fcfc4bd77cedc97a\\jakarta.xml.bind-api-4.0.0.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.assertj\\assertj-core\\3.23.1\\d2bb60570f5b3d7ffa8f8000118c9c07b86eca93\\assertj-core-3.23.1.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.hamcrest\\hamcrest\\2.2\\1820c0968dba3a11a1b30669bb1f01978a91dedc\\hamcrest-2.2.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.mockito\\mockito-junit-jupiter\\4.8.1\\e393aa62eca2244a535b03842843f2f199343d1f\\mockito-junit-jupiter-4.8.1.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.junit.jupiter\\junit-jupiter-params\\5.9.2\\bc2765afb7b85b583c710dd259a11c6b8c39e912\\junit-jupiter-params-5.9.2.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.junit.jupiter\\junit-jupiter-engine\\5.9.2\\572f7a553b53f83ee59cc045ce1c3772864ab76c\\junit-jupiter-engine-5.9.2.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.junit.jupiter\\junit-jupiter-api\\5.9.2\\fed843581520eac594bc36bb4b0f55e7b947dda9\\junit-jupiter-api-5.9.2.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.junit.platform\\junit-platform-launcher\\1.9.2\\38e0bfad8c57d4cd1a8f27926c25ffe9543068d6\\junit-platform-launcher-1.9.2.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.junit.platform\\junit-platform-engine\\1.9.2\\40aeef2be7b04f96bb91e8b054affc28b7c7c935\\junit-platform-engine-1.9.2.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.junit.platform\\junit-platform-commons\\1.9.2\\6f9f8621d8230cd38aa42e58ccbc0c00569131ce\\junit-platform-commons-1.9.2.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.junit.jupiter\\junit-jupiter\\5.9.2\\26c586fbe0ebd81b48c9f11f0d998124248697ae\\junit-jupiter-5.9.2.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.mockito\\mockito-core\\4.8.1\\d8eb9dec8747d08645347bb8c69088ac83197975\\mockito-core-4.8.1.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.skyscreamer\\jsonassert\\1.5.1\\6d842d0faf4cf6725c509a5e5347d319ee0431c3\\jsonassert-1.5.1.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.springframework\\spring-test\\6.0.7\\c0734c4b554ee485b80cdf193f9b9f5e201d29ae\\spring-test-6.0.7.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.springframework\\spring-aop\\6.0.7\\d5b0bb68c88a4027d8e5d42f438088db86f29660\\spring-aop-6.0.7.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.springframework\\spring-beans\\6.0.7\\1abeec454cd1a2a40cff11ed5c388228eb021871\\spring-beans-6.0.7.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.springframework\\spring-expression\\6.0.7\\c9c93c88d35d02a0291ad7051065544fc0b674a3\\spring-expression-6.0.7.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.springframework\\spring-core\\6.0.7\\33ad624acd55c846ec56fd65bd954b23fb2681b3\\spring-core-6.0.7.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.xmlunit\\xmlunit-core\\2.9.1\\e5833662d9a1279a37da3ef6f62a1da29fcd68c4\\xmlunit-core-2.9.1.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.apache.zookeeper\\zookeeper\\3.6.3\\a6e74f826db85ff8c51c15ef0fa2ea0b462aef25\\zookeeper-3.6.3.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.springframework.boot\\spring-boot-starter-logging\\3.0.5\\693455577f6f8c8a53f5992479358e955df74920\\spring-boot-starter-logging-3.0.5.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\jakarta.annotation\\jakarta.annotation-api\\2.1.1\\48b9bda22b091b1f48b13af03fe36db3be6e1ae3\\jakarta.annotation-api-2.1.1.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.yaml\\snakeyaml\\1.33\\2cd0a87ff7df953f810c344bdf2fe3340b954c69\\snakeyaml-1.33.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\com.fasterxml.jackson.datatype\\jackson-datatype-jsr310\\2.14.2\\796518148a385b2728d44886cc0f8852eb8eeb53\\jackson-datatype-jsr310-2.14.2.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\com.fasterxml.jackson.module\\jackson-module-parameter-names\\2.14.2\\2b6c19b3d99dda02915515df879ab9e23fed3864\\jackson-module-parameter-names-2.14.2.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\com.fasterxml.jackson.dataformat\\jackson-dataformat-csv\\2.14.2\\c6201b16c9317197e97368e6c3f696da399d5b0f\\jackson-dataformat-csv-2.14.2.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\com.fasterxml.jackson.module\\jackson-module-scala_2.13\\2.14.2\\478ce3b018edfb16e7ce6debdfd42b9bd79b829d\\jackson-module-scala_2.13-2.14.2.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\com.fasterxml.jackson.core\\jackson-annotations\\2.14.2\\a7aae9525864930723e3453ab799521fdfd9d873\\jackson-annotations-2.14.2.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\com.fasterxml.jackson.core\\jackson-core\\2.14.2\\f804090e6399ce0cf78242db086017512dd71fcc\\jackson-core-2.14.2.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\com.fasterxml.jackson.datatype\\jackson-datatype-jdk8\\2.14.2\\2f3c71211b6ea7a978eba33574d7135d536e07fb\\jackson-datatype-jdk8-2.14.2.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\com.fasterxml.jackson.core\\jackson-databind\\2.14.2\\1e71fddbc80bb86f71a6345ac1e8ab8a00e7134\\jackson-databind-2.14.2.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.apache.tomcat.embed\\tomcat-embed-websocket\\10.1.7\\2dbb5446ecea57d97293e041142534ad314580ea\\tomcat-embed-websocket-10.1.7.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.apache.tomcat.embed\\tomcat-embed-core\\10.1.7\\d486363d49c6536556af38d7e1052d56a39319e5\\tomcat-embed-core-10.1.7.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\com.github.luben\\zstd-jni\\1.5.2-1\\fad786abc1d1b81570e8d9a2fc8a1ef479bc27b6\\zstd-jni-1.5.2-1.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.lz4\\lz4-java\\1.8.0\\4b986a99445e49ea5fbf5d149c4b63f6ed6c6780\\lz4-java-1.8.0.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.xerial.snappy\\snappy-java\\1.1.8.4\\66f0d56454509f6e36175f2331572e250e04a6cc\\snappy-java-1.1.8.4.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\com.yammer.metrics\\metrics-core\\2.2.0\\f82c035cfa786d3cbec362c38c22a5f5b1bc8724\\metrics-core-2.2.0.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.bitbucket.b_c\\jose4j\\0.7.9\\b44a2235728ab1cad9ffd06013500f09a5f1d241\\jose4j-0.7.9.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\com.typesafe.scala-logging\\scala-logging_2.13\\3.9.4\\e5838ddcf8c1c2b612a7956b9f80423a508675db\\scala-logging_2.13-3.9.4.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\io.dropwizard.metrics\\metrics-core\\4.2.18\\616b1bcf7ce3e45d1a49236f8aba4993d1897048\\metrics-core-4.2.18.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\ch.qos.logback\\logback-classic\\1.4.6\\61f81fe5d996f077f90a08ff5ca75d01dbe752c3\\logback-classic-1.4.6.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.apache.logging.log4j\\log4j-to-slf4j\\2.19.0\\30f4812e43172ecca5041da2cb6b965cc4777c19\\log4j-to-slf4j-2.19.0.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.slf4j\\jul-to-slf4j\\2.0.7\\a48f44aeaa8a5ddc347007298a28173ac1fbbd8b\\jul-to-slf4j-2.0.7.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.slf4j\\slf4j-api\\2.0.7\\41eb7184ea9d556f23e18b5cb99cad1f8581fc00\\slf4j-api-2.0.7.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\io.micrometer\\micrometer-commons\\1.10.5\\bb78821020b0e6008e62ee919702b8d4249794d5\\micrometer-commons-1.10.5.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\jakarta.validation\\jakarta.validation-api\\3.0.2\\92b6631659ba35ca09e44874d3eb936edfeee532\\jakarta.validation-api-3.0.2.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.jboss.logging\\jboss-logging\\3.5.0.Final\\c19307cc11f28f5e2679347e633a3294d865334d\\jboss-logging-3.5.0.Final.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\com.fasterxml\\classmate\\1.5.1\\3fe0bed568c62df5e89f4f174c101eab25345b6c\\classmate-1.5.1.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\net.minidev\\json-smart\\2.4.10\\91cb329e9424bf32131eeb1ce2d17bf31b9899bc\\json-smart-2.4.10.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\jakarta.activation\\jakarta.activation-api\\2.1.1\\88c774ab863a21fb2fc4219af95379fafe499a31\\jakarta.activation-api-2.1.1.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\net.bytebuddy\\byte-buddy\\1.12.23\\d470526e8c4566c04e9ae5d3ccb62d1a7aa58986\\byte-buddy-1.12.23.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\net.bytebuddy\\byte-buddy-agent\\1.12.23\\1cba11fdb72c383edacb909f79ae6870efd275e4\\byte-buddy-agent-1.12.23.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.objenesis\\objenesis\\3.2\\7fadf57620c8b8abdf7519533e5527367cb51f09\\objenesis-3.2.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\com.vaadin.external.google\\android-json\\0.0.20131108.vaadin1\\fa26d351fe62a6a17f5cda1287c1c6110dec413f\\android-json-0.0.20131108.vaadin1.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.springframework\\spring-jcl\\6.0.7\\6250e61ccf71b83204669e0501533278ef7888f8\\spring-jcl-6.0.7.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.apache.zookeeper\\zookeeper-jute\\3.6.3\\8990d19ec3db01f45f82d4011a11b085db66de05\\zookeeper-jute-3.6.3.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.apache.yetus\\audience-annotations\\0.5.0\\55762d3191a8d6610ef46d11e8cb70c7667342a3\\audience-annotations-0.5.0.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\io.netty\\netty-handler\\4.1.90.Final\\64f6946ce4d9189cec5341d3f5f86ac5653099b5\\netty-handler-4.1.90.Final.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\io.netty\\netty-transport-native-epoll\\4.1.90.Final\\54b171fb0081870267a2810b8d2f84cfd23ea628\\netty-transport-native-epoll-4.1.90.Final.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\net.sourceforge.argparse4j\\argparse4j\\0.7.0\\6f0621d0c3888de39e0f06d01f37ba53a798e657\\argparse4j-0.7.0.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\net.sf.jopt-simple\\jopt-simple\\5.0.4\\4fdac2fbe92dfad86aa6e9301736f6b4342a3f5c\\jopt-simple-5.0.4.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.scala-lang.modules\\scala-collection-compat_2.13\\2.6.0\\6d987634f6bd6b9451f4789c6022c2115733a0de\\scala-collection-compat_2.13-2.6.0.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.scala-lang.modules\\scala-java8-compat_2.13\\1.0.2\\5b54f60ccf03e41e24c466462a72475ee918c304\\scala-java8-compat_2.13-1.0.2.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.scala-lang\\scala-reflect\\2.13.8\\994b004d041b18724ec298a135c37e7817d369ec\\scala-reflect-2.13.8.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\commons-cli\\commons-cli\\1.4\\c51c00206bb913cd8612b24abd9fa98ae89719b1\\commons-cli-1.4.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.scala-lang\\scala-library\\2.13.10\\67c1afabaea9ba51321159e70a78515647e1b73d\\scala-library-2.13.10.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.opentest4j\\opentest4j\\1.2.0\\28c11eb91f9b6d8e200631d46e20a7f407f2a046\\opentest4j-1.2.0.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\net.minidev\\accessors-smart\\2.4.9\\32e540749224c22c9b17de8137e916aae9057e22\\accessors-smart-2.4.9.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\io.netty\\netty-transport-classes-epoll\\4.1.90.Final\\2c925c90779d6193ea91973b73ca7ead38ec25a2\\netty-transport-classes-epoll-4.1.90.Final.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\io.netty\\netty-transport-native-unix-common\\4.1.90.Final\\e42282002cf22105e7e993651aead231246d0220\\netty-transport-native-unix-common-4.1.90.Final.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\io.netty\\netty-codec\\4.1.90.Final\\9992a22c82e18b8fd4f34989535f3e504e55aa37\\netty-codec-4.1.90.Final.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\io.netty\\netty-transport\\4.1.90.Final\\82d68da212f62b076c763f5efa9b072d2abc018f\\netty-transport-4.1.90.Final.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\io.netty\\netty-resolver\\4.1.90.Final\\47c415d8c83f08b820ba00e6497a6cf19dd0155f\\netty-resolver-4.1.90.Final.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\io.netty\\netty-buffer\\4.1.90.Final\\937eb60c19c5f5c1326b96123c9ec3d33238d4d5\\netty-buffer-4.1.90.Final.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\io.netty\\netty-common\\4.1.90.Final\\43597a09382c6ae2bef469a9b3a41e8a17850638\\netty-common-4.1.90.Final.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.rocksdb\\rocksdbjni\\7.1.2\\ffe87d1c5d5b3a46d065cc4cf5311f18d8233a6b\\rocksdbjni-7.1.2.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\com.thoughtworks.paranamer\\paranamer\\2.8\\619eba74c19ccf1da8ebec97a2d7f8ba05773dd6\\paranamer-2.8.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\ch.qos.logback\\logback-core\\1.4.6\\c4eb386f0fe83d61c2e8a91df50bb07e7ea95140\\logback-core-1.4.6.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.apache.logging.log4j\\log4j-api\\2.19.0\\ea1b37f38c327596b216542bc636cfdc0b8036fa\\log4j-api-2.19.0.jar;C:\\Users\\devendraverma\\.gradle\\caches\\modules-2\\files-2.1\\org.ow2.asm\\asm\\9.3\\8e6300ef51c1d801a7ed62d07cd221aca3a90640\\asm-9.3.jar
+2023-08-16T00:30:45.798+05:30  INFO 28952 --- [    Test worker] org.apache.zookeeper.ZooKeeper           : Client environment:java.library.path=C:\Program Files\Java\jdk-17\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Python311\Scripts\;C:\Python311\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\Java\jdk-17\bin;C:\Program Files\Git\cmd;C:\ProgramData\chocolatey\bin;C:\Program Files\nvm;C:\Program Files\nodejs;C:\Users\devendraverma\AppData\Local\Microsoft\WindowsApps;C:\Users\devendraverma\AppData\Local\Programs\Git\cmd;C:\Users\devendraverma\AppData\Roaming\npm;C:\Users\devendraverma\AppData\Local\Programs\Microsoft VS Code\bin;.
+2023-08-16T00:30:45.798+05:30  INFO 28952 --- [    Test worker] org.apache.zookeeper.ZooKeeper           : Client environment:java.io.tmpdir=C:\Users\DEVEND~1\AppData\Local\Temp\
+2023-08-16T00:30:45.798+05:30  INFO 28952 --- [    Test worker] org.apache.zookeeper.ZooKeeper           : Client environment:java.compiler=&lt;NA&gt;
+2023-08-16T00:30:45.798+05:30  INFO 28952 --- [    Test worker] org.apache.zookeeper.ZooKeeper           : Client environment:os.name=Windows 10
+2023-08-16T00:30:45.798+05:30  INFO 28952 --- [    Test worker] org.apache.zookeeper.ZooKeeper           : Client environment:os.arch=amd64
+2023-08-16T00:30:45.798+05:30  INFO 28952 --- [    Test worker] org.apache.zookeeper.ZooKeeper           : Client environment:os.version=10.0
+2023-08-16T00:30:45.798+05:30  INFO 28952 --- [    Test worker] org.apache.zookeeper.ZooKeeper           : Client environment:user.name=devendraverma
+2023-08-16T00:30:45.799+05:30  INFO 28952 --- [    Test worker] org.apache.zookeeper.ZooKeeper           : Client environment:user.home=C:\Users\devendraverma
+2023-08-16T00:30:45.799+05:30  INFO 28952 --- [    Test worker] org.apache.zookeeper.ZooKeeper           : Client environment:user.dir=C:\projects\library-events-producer
+2023-08-16T00:30:45.799+05:30  INFO 28952 --- [    Test worker] org.apache.zookeeper.ZooKeeper           : Client environment:os.memory.free=37MB
+2023-08-16T00:30:45.799+05:30  INFO 28952 --- [    Test worker] org.apache.zookeeper.ZooKeeper           : Client environment:os.memory.max=512MB
+2023-08-16T00:30:45.799+05:30  INFO 28952 --- [    Test worker] org.apache.zookeeper.ZooKeeper           : Client environment:os.memory.total=57MB
+2023-08-16T00:30:45.824+05:30  INFO 28952 --- [    Test worker] org.apache.zookeeper.ZooKeeper           : Initiating client connection, connectString=127.0.0.1:62003 sessionTimeout=18000 watcher=kafka.zookeeper.ZooKeeperClient$ZooKeeperClientWatcher$@78a515e4
+2023-08-16T00:30:45.838+05:30  INFO 28952 --- [    Test worker] org.apache.zookeeper.ClientCnxnSocket    : jute.maxbuffer value is 4194304 Bytes
+2023-08-16T00:30:45.886+05:30  INFO 28952 --- [    Test worker] org.apache.zookeeper.ClientCnxn          : zookeeper.request.timeout value is 0. feature enabled=false
+2023-08-16T00:30:45.894+05:30  INFO 28952 --- [    Test worker] kafka.zookeeper.ZooKeeperClient          : [ZooKeeperClient Kafka server] Waiting until connected.
+2023-08-16T00:30:45.929+05:30  INFO 28952 --- [27.0.0.1:62003)] org.apache.zookeeper.ClientCnxn          : Opening socket connection to server /127.0.0.1:62003.
+2023-08-16T00:30:45.942+05:30  INFO 28952 --- [27.0.0.1:62003)] org.apache.zookeeper.ClientCnxn          : Socket connection established, initiating session, client: /127.0.0.1:62004, server: /127.0.0.1:62003
+2023-08-16T00:30:45.991+05:30  INFO 28952 --- [   SyncThread:0] o.a.z.server.persistence.FileTxnLog      : Creating new log file: log.1
+2023-08-16T00:30:46.006+05:30  INFO 28952 --- [   SyncThread:0] o.a.zookeeper.audit.ZKAuditProvider      : ZooKeeper audit is disabled.
+2023-08-16T00:30:46.013+05:30  INFO 28952 --- [27.0.0.1:62003)] org.apache.zookeeper.ClientCnxn          : Session establishment complete on server /127.0.0.1:62003, session id = 0x1000feffbb20000, negotiated timeout = 16000
+2023-08-16T00:30:46.027+05:30  INFO 28952 --- [    Test worker] kafka.zookeeper.ZooKeeperClient          : [ZooKeeperClient Kafka server] Connected.
+2023-08-16T00:30:46.390+05:30  INFO 28952 --- [    Test worker] kafka.server.KafkaServer                 : Cluster ID = P1jIcEJoRtqBTTqWX0zv6A
+2023-08-16T00:30:46.394+05:30  WARN 28952 --- [    Test worker] kafka.server.BrokerMetadataCheckpoint    : No meta.properties file under dir C:\Users\DEVEND~1\AppData\Local\Temp\spring.kafka.caf80c4a-62fd-48a5-9f65-62494aa372232350185087413006166\meta.properties
+2023-08-16T00:30:46.489+05:30  INFO 28952 --- [    Test worker] kafka.server.KafkaConfig                 : KafkaConfig values: 
+	advertised.listeners = null
+	alter.config.policy.class.name = null
+	alter.log.dirs.replication.quota.window.num = 11
+	alter.log.dirs.replication.quota.window.size.seconds = 1
+	authorizer.class.name = 
+	auto.create.topics.enable = true
+	auto.leader.rebalance.enable = true
+	background.threads = 10
+	broker.heartbeat.interval.ms = 2000
+	broker.id = 0
+	broker.id.generation.enable = true
+	broker.rack = null
+	broker.session.timeout.ms = 9000
+	client.quota.callback.class = null
+	compression.type = producer
+	connection.failed.authentication.delay.ms = 100
+	connections.max.idle.ms = 600000
+	connections.max.reauth.ms = 0
+	control.plane.listener.name = null
+	controlled.shutdown.enable = false
+	controlled.shutdown.max.retries = 3
+	controlled.shutdown.retry.backoff.ms = 100
+	controller.listener.names = null
+	controller.quorum.append.linger.ms = 25
+	controller.quorum.election.backoff.max.ms = 1000
+	controller.quorum.election.timeout.ms = 1000
+	controller.quorum.fetch.timeout.ms = 2000
+	controller.quorum.request.timeout.ms = 2000
+	controller.quorum.retry.backoff.ms = 20
+	controller.quorum.voters = []
+	controller.quota.window.num = 11
+	controller.quota.window.size.seconds = 1
+	controller.socket.timeout.ms = 1000
+	create.topic.policy.class.name = null
+	default.replication.factor = 1
+	delegation.token.expiry.check.interval.ms = 3600000
+	delegation.token.expiry.time.ms = 86400000
+	delegation.token.master.key = null
+	delegation.token.max.lifetime.ms = 604800000
+	delegation.token.secret.key = null
+	delete.records.purgatory.purge.interval.requests = 1
+	delete.topic.enable = true
+	early.start.listeners = null
+	fetch.max.bytes = 57671680
+	fetch.purgatory.purge.interval.requests = 1000
+	group.initial.rebalance.delay.ms = 0
+	group.max.session.timeout.ms = 1800000
+	group.max.size = 2147483647
+	group.min.session.timeout.ms = 6000
+	initial.broker.registration.timeout.ms = 60000
+	inter.broker.listener.name = null
+	inter.broker.protocol.version = 3.3-IV3
+	kafka.metrics.polling.interval.secs = 10
+	kafka.metrics.reporters = []
+	leader.imbalance.check.interval.seconds = 300
+	leader.imbalance.per.broker.percentage = 10
+	listener.security.protocol.map = PLAINTEXT:PLAINTEXT,SSL:SSL,SASL_PLAINTEXT:SASL_PLAINTEXT,SASL_SSL:SASL_SSL
+	listeners = PLAINTEXT://localhost:0
+	log.cleaner.backoff.ms = 15000
+	log.cleaner.dedupe.buffer.size = 2097152
+	log.cleaner.delete.retention.ms = 86400000
+	log.cleaner.enable = true
+	log.cleaner.io.buffer.load.factor = 0.9
+	log.cleaner.io.buffer.size = 524288
+	log.cleaner.io.max.bytes.per.second = 1.7976931348623157E308
+	log.cleaner.max.compaction.lag.ms = 9223372036854775807
+	log.cleaner.min.cleanable.ratio = 0.5
+	log.cleaner.min.compaction.lag.ms = 0
+	log.cleaner.threads = 1
+	log.cleanup.policy = [delete]
+	log.dir = C:\Users\DEVEND~1\AppData\Local\Temp\spring.kafka.caf80c4a-62fd-48a5-9f65-62494aa372232350185087413006166
+	log.dirs = null
+	log.flush.interval.messages = 9223372036854775807
+	log.flush.interval.ms = null
+	log.flush.offset.checkpoint.interval.ms = 60000
+	log.flush.scheduler.interval.ms = 9223372036854775807
+	log.flush.start.offset.checkpoint.interval.ms = 60000
+	log.index.interval.bytes = 4096
+	log.index.size.max.bytes = 10485760
+	log.message.downconversion.enable = true
+	log.message.format.version = 3.0-IV1
+	log.message.timestamp.difference.max.ms = 9223372036854775807
+	log.message.timestamp.type = CreateTime
+	log.preallocate = false
+	log.retention.bytes = -1
+	log.retention.check.interval.ms = 300000
+	log.retention.hours = 168
+	log.retention.minutes = null
+	log.retention.ms = null
+	log.roll.hours = 168
+	log.roll.jitter.hours = 0
+	log.roll.jitter.ms = null
+	log.roll.ms = null
+	log.segment.bytes = 1073741824
+	log.segment.delete.delay.ms = 1000
+	max.connection.creation.rate = 2147483647
+	max.connections = 2147483647
+	max.connections.per.ip = 2147483647
+	max.connections.per.ip.overrides = 
+	max.incremental.fetch.session.cache.slots = 1000
+	message.max.bytes = 1048588
+	metadata.log.dir = null
+	metadata.log.max.record.bytes.between.snapshots = 20971520
+	metadata.log.segment.bytes = 1073741824
+	metadata.log.segment.min.bytes = 8388608
+	metadata.log.segment.ms = 604800000
+	metadata.max.idle.interval.ms = 500
+	metadata.max.retention.bytes = -1
+	metadata.max.retention.ms = 604800000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	min.insync.replicas = 1
+	node.id = 0
+	num.io.threads = 8
+	num.network.threads = 3
+	num.partitions = 3
+	num.recovery.threads.per.data.dir = 1
+	num.replica.alter.log.dirs.threads = null
+	num.replica.fetchers = 1
+	offset.metadata.max.bytes = 4096
+	offsets.commit.required.acks = -1
+	offsets.commit.timeout.ms = 5000
+	offsets.load.buffer.size = 5242880
+	offsets.retention.check.interval.ms = 600000
+	offsets.retention.minutes = 10080
+	offsets.topic.compression.codec = 0
+	offsets.topic.num.partitions = 5
+	offsets.topic.replication.factor = 1
+	offsets.topic.segment.bytes = 104857600
+	password.encoder.cipher.algorithm = AES/CBC/PKCS5Padding
+	password.encoder.iterations = 4096
+	password.encoder.key.length = 128
+	password.encoder.keyfactory.algorithm = null
+	password.encoder.old.secret = null
+	password.encoder.secret = null
+	principal.builder.class = class org.apache.kafka.common.security.authenticator.DefaultKafkaPrincipalBuilder
+	process.roles = []
+	producer.purgatory.purge.interval.requests = 1000
+	queued.max.request.bytes = -1
+	queued.max.requests = 500
+	quota.window.num = 11
+	quota.window.size.seconds = 1
+	remote.log.index.file.cache.total.size.bytes = 1073741824
+	remote.log.manager.task.interval.ms = 30000
+	remote.log.manager.task.retry.backoff.max.ms = 30000
+	remote.log.manager.task.retry.backoff.ms = 500
+	remote.log.manager.task.retry.jitter = 0.2
+	remote.log.manager.thread.pool.size = 10
+	remote.log.metadata.manager.class.name = null
+	remote.log.metadata.manager.class.path = null
+	remote.log.metadata.manager.impl.prefix = null
+	remote.log.metadata.manager.listener.name = null
+	remote.log.reader.max.pending.tasks = 100
+	remote.log.reader.threads = 10
+	remote.log.storage.manager.class.name = null
+	remote.log.storage.manager.class.path = null
+	remote.log.storage.manager.impl.prefix = null
+	remote.log.storage.system.enable = false
+	replica.fetch.backoff.ms = 1000
+	replica.fetch.max.bytes = 1048576
+	replica.fetch.min.bytes = 1
+	replica.fetch.response.max.bytes = 10485760
+	replica.fetch.wait.max.ms = 500
+	replica.high.watermark.checkpoint.interval.ms = 9223372036854775807
+	replica.lag.time.max.ms = 30000
+	replica.selector.class = null
+	replica.socket.receive.buffer.bytes = 65536
+	replica.socket.timeout.ms = 1000
+	replication.quota.window.num = 11
+	replication.quota.window.size.seconds = 1
+	request.timeout.ms = 30000
+	reserved.broker.max.id = 1000
+	sasl.client.callback.handler.class = null
+	sasl.enabled.mechanisms = [GSSAPI]
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.principal.to.local.rules = [DEFAULT]
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism.controller.protocol = GSSAPI
+	sasl.mechanism.inter.broker.protocol = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	sasl.server.callback.handler.class = null
+	sasl.server.max.receive.size = 524288
+	security.inter.broker.protocol = PLAINTEXT
+	security.providers = null
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	socket.listen.backlog.size = 50
+	socket.receive.buffer.bytes = 102400
+	socket.request.max.bytes = 104857600
+	socket.send.buffer.bytes = 102400
+	ssl.cipher.suites = []
+	ssl.client.auth = none
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.principal.mapping.rules = DEFAULT
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.abort.timed.out.transaction.cleanup.interval.ms = 10000
+	transaction.max.timeout.ms = 900000
+	transaction.remove.expired.transaction.cleanup.interval.ms = 3600000
+	transaction.state.log.load.buffer.size = 5242880
+	transaction.state.log.min.isr = 2
+	transaction.state.log.num.partitions = 50
+	transaction.state.log.replication.factor = 3
+	transaction.state.log.segment.bytes = 104857600
+	transactional.id.expiration.ms = 604800000
+	unclean.leader.election.enable = false
+	zookeeper.clientCnxnSocket = null
+	zookeeper.connect = 127.0.0.1:62003
+	zookeeper.connection.timeout.ms = 10000
+	zookeeper.max.in.flight.requests = 10
+	zookeeper.session.timeout.ms = 18000
+	zookeeper.set.acl = false
+	zookeeper.ssl.cipher.suites = null
+	zookeeper.ssl.client.enable = false
+	zookeeper.ssl.crl.enable = false
+	zookeeper.ssl.enabled.protocols = null
+	zookeeper.ssl.endpoint.identification.algorithm = HTTPS
+	zookeeper.ssl.keystore.location = null
+	zookeeper.ssl.keystore.password = null
+	zookeeper.ssl.keystore.type = null
+	zookeeper.ssl.ocsp.enable = false
+	zookeeper.ssl.protocol = TLSv1.2
+	zookeeper.ssl.truststore.location = null
+	zookeeper.ssl.truststore.password = null
+	zookeeper.ssl.truststore.type = null
+
+2023-08-16T00:30:46.600+05:30  INFO 28952 --- [nelReaper-Fetch] lientQuotaManager$ThrottledChannelReaper : [ThrottledChannelReaper-Fetch]: Starting
+2023-08-16T00:30:46.603+05:30  INFO 28952 --- [lReaper-Produce] lientQuotaManager$ThrottledChannelReaper : [ThrottledChannelReaper-Produce]: Starting
+2023-08-16T00:30:46.606+05:30  INFO 28952 --- [lReaper-Request] lientQuotaManager$ThrottledChannelReaper : [ThrottledChannelReaper-Request]: Starting
+2023-08-16T00:30:46.625+05:30  INFO 28952 --- [trollerMutation] lientQuotaManager$ThrottledChannelReaper : [ThrottledChannelReaper-ControllerMutation]: Starting
+2023-08-16T00:30:46.906+05:30  INFO 28952 --- [    Test worker] kafka.log.LogManager                     : Loading logs from log dirs ArraySeq(C:\Users\DEVEND~1\AppData\Local\Temp\spring.kafka.caf80c4a-62fd-48a5-9f65-62494aa372232350185087413006166)
+2023-08-16T00:30:46.920+05:30  INFO 28952 --- [    Test worker] kafka.log.LogManager                     : Attempting recovery for all logs in C:\Users\DEVEND~1\AppData\Local\Temp\spring.kafka.caf80c4a-62fd-48a5-9f65-62494aa372232350185087413006166 since no clean shutdown file was found
+2023-08-16T00:30:46.957+05:30  INFO 28952 --- [    Test worker] kafka.log.LogManager                     : Loaded 0 logs in 51ms.
+2023-08-16T00:30:46.958+05:30  INFO 28952 --- [    Test worker] kafka.log.LogManager                     : Starting log cleanup with a period of 300000 ms.
+2023-08-16T00:30:46.968+05:30  INFO 28952 --- [    Test worker] kafka.log.LogManager                     : Starting log flusher with a default period of 9223372036854775807 ms.
+2023-08-16T00:30:47.014+05:30  INFO 28952 --- [    Test worker] kafka.log.LogCleaner                     : Starting the log cleaner
+2023-08-16T00:30:47.072+05:30  INFO 28952 --- [leaner-thread-0] kafka.log.LogCleaner                     : [kafka-log-cleaner-thread-0]: Starting
+2023-08-16T00:30:47.097+05:30  INFO 28952 --- [-process-thread] stener$ChangeNotificationProcessorThread : [feature-zk-node-event-process-thread]: Starting
+2023-08-16T00:30:47.118+05:30  INFO 28952 --- [-process-thread] k.server.FinalizedFeatureChangeListener  : Feature ZK node at path: /feature does not exist
+2023-08-16T00:30:47.196+05:30  INFO 28952 --- [name=forwarding] k.s.BrokerToControllerRequestThread      : [BrokerToControllerChannelManager broker=0 name=forwarding]: Starting
+2023-08-16T00:30:47.916+05:30  INFO 28952 --- [    Test worker] kafka.network.ConnectionQuotas           : Updated connection-accept-rate max connection creation rate to 2147483647
+2023-08-16T00:30:47.939+05:30  INFO 28952 --- [    Test worker] kafka.network.DataPlaneAcceptor          : Awaiting socket connections on localhost:62012.
+2023-08-16T00:30:48.046+05:30  INFO 28952 --- [    Test worker] kafka.network.SocketServer               : [SocketServer listenerType=ZK_BROKER, nodeId=0] Created data-plane acceptor and processors for endpoint : ListenerName(PLAINTEXT)
+2023-08-16T00:30:48.071+05:30  INFO 28952 --- [=alterPartition] k.s.BrokerToControllerRequestThread      : [BrokerToControllerChannelManager broker=0 name=alterPartition]: Starting
+2023-08-16T00:30:48.117+05:30  INFO 28952 --- [eaper-0-Produce] perationPurgatory$ExpiredOperationReaper : [ExpirationReaper-0-Produce]: Starting
+2023-08-16T00:30:48.120+05:30  INFO 28952 --- [nReaper-0-Fetch] perationPurgatory$ExpiredOperationReaper : [ExpirationReaper-0-Fetch]: Starting
+2023-08-16T00:30:48.136+05:30  INFO 28952 --- [0-DeleteRecords] perationPurgatory$ExpiredOperationReaper : [ExpirationReaper-0-DeleteRecords]: Starting
+2023-08-16T00:30:48.137+05:30  INFO 28952 --- [r-0-ElectLeader] perationPurgatory$ExpiredOperationReaper : [ExpirationReaper-0-ElectLeader]: Starting
+2023-08-16T00:30:48.186+05:30  INFO 28952 --- [rFailureHandler] k.s.ReplicaManager$LogDirFailureHandler  : [LogDirFailureHandler]: Starting
+2023-08-16T00:30:48.286+05:30  INFO 28952 --- [    Test worker] kafka.zk.KafkaZkClient                   : Creating /brokers/ids/0 (is it secure? false)
+2023-08-16T00:30:48.340+05:30  INFO 28952 --- [    Test worker] kafka.zk.KafkaZkClient                   : Stat of the created znode at /brokers/ids/0 is: 25,25,1692126048321,1692126048321,1,0,0,72075117432274944,204,0,25
+
+2023-08-16T00:30:48.342+05:30  INFO 28952 --- [    Test worker] kafka.zk.KafkaZkClient                   : Registered broker 0 at path /brokers/ids/0 with addresses: PLAINTEXT://localhost:62012, czxid (broker epoch): 25
+2023-08-16T00:30:48.519+05:30  INFO 28952 --- [er-event-thread] rollerEventManager$ControllerEventThread : [ControllerEventThread controllerId=0] Starting
+2023-08-16T00:30:48.520+05:30  INFO 28952 --- [nReaper-0-topic] perationPurgatory$ExpiredOperationReaper : [ExpirationReaper-0-topic]: Starting
+2023-08-16T00:30:48.562+05:30  INFO 28952 --- [per-0-Rebalance] perationPurgatory$ExpiredOperationReaper : [ExpirationReaper-0-Rebalance]: Starting
+2023-08-16T00:30:48.572+05:30  INFO 28952 --- [per-0-Heartbeat] perationPurgatory$ExpiredOperationReaper : [ExpirationReaper-0-Heartbeat]: Starting
+2023-08-16T00:30:48.618+05:30  INFO 28952 --- [    Test worker] k.coordinator.group.GroupCoordinator     : [GroupCoordinator 0]: Starting up.
+2023-08-16T00:30:48.632+05:30  INFO 28952 --- [    Test worker] k.coordinator.group.GroupCoordinator     : [GroupCoordinator 0]: Startup complete.
+2023-08-16T00:30:48.634+05:30  INFO 28952 --- [er-event-thread] kafka.zk.KafkaZkClient                   : Successfully created /controller_epoch with initial epoch 0
+2023-08-16T00:30:48.655+05:30  INFO 28952 --- [er-event-thread] kafka.controller.KafkaController         : [Controller id=0] 0 successfully elected as the controller. Epoch incremented to 1 and epoch zk version is now 1
+2023-08-16T00:30:48.667+05:30  INFO 28952 --- [er-event-thread] kafka.controller.KafkaController         : [Controller id=0] Creating FeatureZNode at path: /feature with contents: FeatureZNode(2,Enabled,Map())
+2023-08-16T00:30:48.676+05:30  INFO 28952 --- [ker-EventThread] k.server.FinalizedFeatureChangeListener  : Feature ZK node created at path: /feature
+2023-08-16T00:30:48.680+05:30  INFO 28952 --- [    Test worker] k.c.transaction.TransactionCoordinator   : [TransactionCoordinator id=0] Starting up.
+2023-08-16T00:30:48.687+05:30  INFO 28952 --- [    Test worker] k.c.transaction.TransactionCoordinator   : [TransactionCoordinator id=0] Startup complete.
+2023-08-16T00:30:48.750+05:30  INFO 28952 --- [rSenderThread-0] k.c.t.TransactionMarkerChannelManager    : [Transaction Marker Channel Manager 0]: Starting
+2023-08-16T00:30:48.800+05:30  INFO 28952 --- [-process-thread] kafka.server.metadata.ZkMetadataCache    : [MetadataCache brokerId=0] Updated cache from existing &lt;empty&gt; to latest FinalizedFeaturesAndEpoch(features=Map(), epoch=0).
+2023-08-16T00:30:48.800+05:30  INFO 28952 --- [er-event-thread] kafka.controller.KafkaController         : [Controller id=0] Registering handlers
+2023-08-16T00:30:48.807+05:30  INFO 28952 --- [er-event-thread] kafka.controller.KafkaController         : [Controller id=0] Deleting log dir event notifications
+2023-08-16T00:30:48.827+05:30  INFO 28952 --- [per-0-AlterAcls] perationPurgatory$ExpiredOperationReaper : [ExpirationReaper-0-AlterAcls]: Starting
+2023-08-16T00:30:48.832+05:30  INFO 28952 --- [er-event-thread] kafka.controller.KafkaController         : [Controller id=0] Deleting isr change notifications
+2023-08-16T00:30:48.839+05:30  INFO 28952 --- [er-event-thread] kafka.controller.KafkaController         : [Controller id=0] Initializing controller context
+2023-08-16T00:30:48.887+05:30  INFO 28952 --- [er-event-thread] kafka.controller.KafkaController         : [Controller id=0] Initialized broker epochs cache: HashMap(0 -&gt; 25)
+2023-08-16T00:30:48.932+05:30  INFO 28952 --- [-process-thread] icationListener$ChangeEventProcessThread : [/config/changes-event-process-thread]: Starting
+2023-08-16T00:30:48.952+05:30  INFO 28952 --- [    Test worker] kafka.network.SocketServer               : [SocketServer listenerType=ZK_BROKER, nodeId=0] Enabling request processing.
+2023-08-16T00:30:48.952+05:30  INFO 28952 --- [er-event-thread] kafka.controller.KafkaController         : [Controller id=0] Currently active brokers in the cluster: Set(0)
+2023-08-16T00:30:48.953+05:30  INFO 28952 --- [er-event-thread] kafka.controller.KafkaController         : [Controller id=0] Currently shutting brokers in the cluster: HashSet()
+2023-08-16T00:30:48.954+05:30  INFO 28952 --- [er-event-thread] kafka.controller.KafkaController         : [Controller id=0] Current list of topics in the cluster: HashSet()
+2023-08-16T00:30:48.955+05:30  INFO 28952 --- [er-event-thread] kafka.controller.KafkaController         : [Controller id=0] Fetching topic deletions in progress
+2023-08-16T00:30:48.959+05:30  INFO 28952 --- [r-0-send-thread] kafka.controller.RequestSendThread       : [RequestSendThread controllerId=0] Starting
+2023-08-16T00:30:48.959+05:30  INFO 28952 --- [er-event-thread] kafka.controller.KafkaController         : [Controller id=0] List of topics to be deleted: 
+2023-08-16T00:30:48.960+05:30  INFO 28952 --- [er-event-thread] kafka.controller.KafkaController         : [Controller id=0] List of topics ineligible for deletion: 
+2023-08-16T00:30:48.961+05:30  INFO 28952 --- [er-event-thread] kafka.controller.KafkaController         : [Controller id=0] Initializing topic deletion manager
+2023-08-16T00:30:48.962+05:30  INFO 28952 --- [er-event-thread] kafka.controller.TopicDeletionManager    : [Topic Deletion Manager 0] Initializing manager with initial deletions: Set(), initial ineligible deletions: HashSet()
+2023-08-16T00:30:48.964+05:30  INFO 28952 --- [    Test worker] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.3.2
+2023-08-16T00:30:48.965+05:30  INFO 28952 --- [    Test worker] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: b66af662e61082cb
+2023-08-16T00:30:48.965+05:30  INFO 28952 --- [    Test worker] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1692126048958
+2023-08-16T00:30:48.968+05:30  INFO 28952 --- [    Test worker] kafka.server.KafkaServer                 : [KafkaServer id=0] started
+2023-08-16T00:30:48.968+05:30  INFO 28952 --- [er-event-thread] kafka.controller.KafkaController         : [Controller id=0] Sending update metadata request
+2023-08-16T00:30:48.978+05:30  INFO 28952 --- [er-event-thread] state.change.logger                      : [Controller id=0 epoch=1] Sending UpdateMetadata request to brokers HashSet(0) for 0 partitions
+2023-08-16T00:30:48.987+05:30  INFO 28952 --- [    Test worker] o.a.k.clients.admin.AdminClientConfig    : AdminClientConfig values: 
+	bootstrap.servers = [127.0.0.1:62012]
+	client.dns.lookup = use_all_dns_ips
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2023-08-16T00:30:49.000+05:30  INFO 28952 --- [er-event-thread] kafka.controller.ZkReplicaStateMachine   : [ReplicaStateMachine controllerId=0] Initializing replica state
+2023-08-16T00:30:49.001+05:30  INFO 28952 --- [er-event-thread] kafka.controller.ZkReplicaStateMachine   : [ReplicaStateMachine controllerId=0] Triggering online replica state changes
+2023-08-16T00:30:49.016+05:30  INFO 28952 --- [er-event-thread] kafka.controller.ZkReplicaStateMachine   : [ReplicaStateMachine controllerId=0] Triggering offline replica state changes
+2023-08-16T00:30:49.017+05:30  INFO 28952 --- [er-event-thread] k.controller.ZkPartitionStateMachine     : [PartitionStateMachine controllerId=0] Initializing partition state
+2023-08-16T00:30:49.019+05:30  INFO 28952 --- [er-event-thread] k.controller.ZkPartitionStateMachine     : [PartitionStateMachine controllerId=0] Triggering online partition state changes
+2023-08-16T00:30:49.028+05:30  INFO 28952 --- [er-event-thread] kafka.controller.KafkaController         : [Controller id=0] Ready to serve as the new controller with epoch 1
+2023-08-16T00:30:49.067+05:30  INFO 28952 --- [er-event-thread] kafka.controller.KafkaController         : [Controller id=0] Partitions undergoing preferred replica election: 
+2023-08-16T00:30:49.069+05:30  INFO 28952 --- [er-event-thread] kafka.controller.KafkaController         : [Controller id=0] Partitions that completed preferred replica election: 
+2023-08-16T00:30:49.070+05:30  INFO 28952 --- [er-event-thread] kafka.controller.KafkaController         : [Controller id=0] Skipping preferred replica election for partitions due to topic deletion: 
+2023-08-16T00:30:49.071+05:30  INFO 28952 --- [er-event-thread] kafka.controller.KafkaController         : [Controller id=0] Resuming preferred replica election for partitions: 
+2023-08-16T00:30:49.072+05:30  INFO 28952 --- [r-0-send-thread] kafka.controller.RequestSendThread       : [RequestSendThread controllerId=0] Controller 0 connected to localhost:62012 (id: 0 rack: null) for sending state change requests
+2023-08-16T00:30:49.075+05:30  INFO 28952 --- [er-event-thread] kafka.controller.KafkaController         : [Controller id=0] Starting replica leader election (PREFERRED) for partitions  triggered by ZkTriggered
+2023-08-16T00:30:49.086+05:30  INFO 28952 --- [    Test worker] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.3.2
+2023-08-16T00:30:49.086+05:30  INFO 28952 --- [    Test worker] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: b66af662e61082cb
+2023-08-16T00:30:49.086+05:30  INFO 28952 --- [    Test worker] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1692126049086
+2023-08-16T00:30:49.109+05:30  INFO 28952 --- [er-event-thread] kafka.controller.KafkaController         : [Controller id=0] Starting the controller scheduler
+2023-08-16T00:30:49.216+05:30  INFO 28952 --- [=alterPartition] k.s.BrokerToControllerRequestThread      : [BrokerToControllerChannelManager broker=0 name=alterPartition]: Recorded new controller, from now on will use node localhost:62012 (id: 0 rack: null)
+2023-08-16T00:30:49.224+05:30  INFO 28952 --- [name=forwarding] k.s.BrokerToControllerRequestThread      : [BrokerToControllerChannelManager broker=0 name=forwarding]: Recorded new controller, from now on will use node localhost:62012 (id: 0 rack: null)
+2023-08-16T00:30:49.479+05:30  INFO 28952 --- [quest-handler-2] kafka.zk.AdminZkClient                   : Creating topic library-events with configuration {} and initial partition assignment HashMap(0 -&gt; ArrayBuffer(0), 1 -&gt; ArrayBuffer(0), 2 -&gt; ArrayBuffer(0))
+2023-08-16T00:30:49.524+05:30  INFO 28952 --- [er-event-thread] kafka.controller.KafkaController         : [Controller id=0] New topics: [Set(library-events)], deleted topics: [HashSet()], new partition replica assignment [Set(TopicIdReplicaAssignment(library-events,Some(QYEU3uZSTteR3b-TIIy75w),Map(library-events-0 -&gt; ReplicaAssignment(replicas=0, addingReplicas=, removingReplicas=), library-events-1 -&gt; ReplicaAssignment(replicas=0, addingReplicas=, removingReplicas=), library-events-2 -&gt; ReplicaAssignment(replicas=0, addingReplicas=, removingReplicas=))))]
+2023-08-16T00:30:49.528+05:30  INFO 28952 --- [er-event-thread] kafka.controller.KafkaController         : [Controller id=0] New partition creation callback for library-events-0,library-events-1,library-events-2
+2023-08-16T00:30:49.536+05:30  INFO 28952 --- [er-event-thread] state.change.logger                      : [Controller id=0 epoch=1] Changed partition library-events-0 state from NonExistentPartition to NewPartition with assigned replicas 0
+2023-08-16T00:30:49.537+05:30  INFO 28952 --- [er-event-thread] state.change.logger                      : [Controller id=0 epoch=1] Changed partition library-events-1 state from NonExistentPartition to NewPartition with assigned replicas 0
+2023-08-16T00:30:49.537+05:30  INFO 28952 --- [er-event-thread] state.change.logger                      : [Controller id=0 epoch=1] Changed partition library-events-2 state from NonExistentPartition to NewPartition with assigned replicas 0
+2023-08-16T00:30:49.538+05:30  INFO 28952 --- [er-event-thread] state.change.logger                      : [Controller id=0 epoch=1] Sending UpdateMetadata request to brokers HashSet() for 0 partitions
+2023-08-16T00:30:49.550+05:30  INFO 28952 --- [er-event-thread] state.change.logger                      : [Controller id=0 epoch=1] Sending UpdateMetadata request to brokers HashSet() for 0 partitions
+2023-08-16T00:30:49.605+05:30  INFO 28952 --- [er-event-thread] state.change.logger                      : [Controller id=0 epoch=1] Changed partition library-events-0 from NewPartition to OnlinePartition with state LeaderAndIsr(leader=0, leaderEpoch=0, isr=List(0), leaderRecoveryState=RECOVERED, partitionEpoch=0)
+2023-08-16T00:30:49.605+05:30  INFO 28952 --- [er-event-thread] state.change.logger                      : [Controller id=0 epoch=1] Changed partition library-events-1 from NewPartition to OnlinePartition with state LeaderAndIsr(leader=0, leaderEpoch=0, isr=List(0), leaderRecoveryState=RECOVERED, partitionEpoch=0)
+2023-08-16T00:30:49.605+05:30  INFO 28952 --- [er-event-thread] state.change.logger                      : [Controller id=0 epoch=1] Changed partition library-events-2 from NewPartition to OnlinePartition with state LeaderAndIsr(leader=0, leaderEpoch=0, isr=List(0), leaderRecoveryState=RECOVERED, partitionEpoch=0)
+2023-08-16T00:30:49.612+05:30  INFO 28952 --- [er-event-thread] state.change.logger                      : [Controller id=0 epoch=1] Sending LeaderAndIsr request to broker 0 with 3 become-leader and 0 become-follower partitions
+2023-08-16T00:30:49.618+05:30  INFO 28952 --- [er-event-thread] state.change.logger                      : [Controller id=0 epoch=1] Sending UpdateMetadata request to brokers HashSet(0) for 3 partitions
+2023-08-16T00:30:49.620+05:30  INFO 28952 --- [er-event-thread] state.change.logger                      : [Controller id=0 epoch=1] Sending UpdateMetadata request to brokers HashSet() for 0 partitions
+2023-08-16T00:30:49.632+05:30  INFO 28952 --- [quest-handler-7] state.change.logger                      : [Broker id=0] Handling LeaderAndIsr request correlationId 1 from controller 0 for 3 partitions
+2023-08-16T00:30:49.705+05:30  INFO 28952 --- [quest-handler-7] kafka.server.ReplicaFetcherManager       : [ReplicaFetcherManager on broker 0] Removed fetcher for partitions Set(library-events-1, library-events-0, library-events-2)
+2023-08-16T00:30:49.708+05:30  INFO 28952 --- [quest-handler-7] state.change.logger                      : [Broker id=0] Stopped fetchers as part of LeaderAndIsr request correlationId 1 from controller 0 epoch 1 as part of the become-leader transition for 3 partitions
+2023-08-16T00:30:49.891+05:30  INFO 28952 --- [quest-handler-7] kafka.log.UnifiedLog$                    : [LogLoader partition=library-events-1, dir=C:\Users\DEVEND~1\AppData\Local\Temp\spring.kafka.caf80c4a-62fd-48a5-9f65-62494aa372232350185087413006166] Loading producer state till offset 0 with message format version 2
+2023-08-16T00:30:49.926+05:30  INFO 28952 --- [quest-handler-7] kafka.log.LogManager                     : Created log for partition library-events-1 in C:\Users\DEVEND~1\AppData\Local\Temp\spring.kafka.caf80c4a-62fd-48a5-9f65-62494aa372232350185087413006166\library-events-1 with properties {}
+2023-08-16T00:30:49.932+05:30  INFO 28952 --- [quest-handler-7] kafka.cluster.Partition                  : [Partition library-events-1 broker=0] No checkpointed highwatermark is found for partition library-events-1
+2023-08-16T00:30:49.934+05:30  INFO 28952 --- [quest-handler-7] kafka.cluster.Partition                  : [Partition library-events-1 broker=0] Log loaded for partition library-events-1 with initial high watermark 0
+2023-08-16T00:30:49.938+05:30  INFO 28952 --- [quest-handler-7] state.change.logger                      : [Broker id=0] Leader library-events-1 with topic id Some(QYEU3uZSTteR3b-TIIy75w) starts at leader epoch 0 from offset 0 with partition epoch 0, high watermark 0, ISR [0], adding replicas [] and removing replicas []. Previous leader epoch was -1.
+2023-08-16T00:30:49.982+05:30  INFO 28952 --- [quest-handler-7] kafka.log.UnifiedLog$                    : [LogLoader partition=library-events-0, dir=C:\Users\DEVEND~1\AppData\Local\Temp\spring.kafka.caf80c4a-62fd-48a5-9f65-62494aa372232350185087413006166] Loading producer state till offset 0 with message format version 2
+2023-08-16T00:30:49.984+05:30  INFO 28952 --- [quest-handler-7] kafka.log.LogManager                     : Created log for partition library-events-0 in C:\Users\DEVEND~1\AppData\Local\Temp\spring.kafka.caf80c4a-62fd-48a5-9f65-62494aa372232350185087413006166\library-events-0 with properties {}
+2023-08-16T00:30:49.984+05:30  INFO 28952 --- [quest-handler-7] kafka.cluster.Partition                  : [Partition library-events-0 broker=0] No checkpointed highwatermark is found for partition library-events-0
+2023-08-16T00:30:49.984+05:30  INFO 28952 --- [quest-handler-7] kafka.cluster.Partition                  : [Partition library-events-0 broker=0] Log loaded for partition library-events-0 with initial high watermark 0
+2023-08-16T00:30:49.984+05:30  INFO 28952 --- [quest-handler-7] state.change.logger                      : [Broker id=0] Leader library-events-0 with topic id Some(QYEU3uZSTteR3b-TIIy75w) starts at leader epoch 0 from offset 0 with partition epoch 0, high watermark 0, ISR [0], adding replicas [] and removing replicas []. Previous leader epoch was -1.
+2023-08-16T00:30:50.039+05:30  INFO 28952 --- [quest-handler-7] kafka.log.UnifiedLog$                    : [LogLoader partition=library-events-2, dir=C:\Users\DEVEND~1\AppData\Local\Temp\spring.kafka.caf80c4a-62fd-48a5-9f65-62494aa372232350185087413006166] Loading producer state till offset 0 with message format version 2
+2023-08-16T00:30:50.041+05:30  INFO 28952 --- [quest-handler-7] kafka.log.LogManager                     : Created log for partition library-events-2 in C:\Users\DEVEND~1\AppData\Local\Temp\spring.kafka.caf80c4a-62fd-48a5-9f65-62494aa372232350185087413006166\library-events-2 with properties {}
+2023-08-16T00:30:50.041+05:30  INFO 28952 --- [quest-handler-7] kafka.cluster.Partition                  : [Partition library-events-2 broker=0] No checkpointed highwatermark is found for partition library-events-2
+2023-08-16T00:30:50.042+05:30  INFO 28952 --- [quest-handler-7] kafka.cluster.Partition                  : [Partition library-events-2 broker=0] Log loaded for partition library-events-2 with initial high watermark 0
+2023-08-16T00:30:50.042+05:30  INFO 28952 --- [quest-handler-7] state.change.logger                      : [Broker id=0] Leader library-events-2 with topic id Some(QYEU3uZSTteR3b-TIIy75w) starts at leader epoch 0 from offset 0 with partition epoch 0, high watermark 0, ISR [0], adding replicas [] and removing replicas []. Previous leader epoch was -1.
+2023-08-16T00:30:50.091+05:30  INFO 28952 --- [quest-handler-7] state.change.logger                      : [Broker id=0] Finished LeaderAndIsr request in 465ms correlationId 1 from controller 0 for 3 partitions
+2023-08-16T00:30:50.143+05:30  INFO 28952 --- [quest-handler-5] state.change.logger                      : [Broker id=0] Add 3 partitions and deleted 0 partitions from metadata cache in response to UpdateMetadata request sent by controller 0 epoch 1 with correlation id 2
+2023-08-16T00:30:50.164+05:30  INFO 28952 --- [| adminclient-1] o.a.kafka.common.utils.AppInfoParser     : App info kafka.admin.client for adminclient-1 unregistered
+2023-08-16T00:30:50.173+05:30  INFO 28952 --- [| adminclient-1] o.apache.kafka.common.metrics.Metrics    : Metrics scheduler closed
+2023-08-16T00:30:50.173+05:30  INFO 28952 --- [| adminclient-1] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2023-08-16T00:30:50.173+05:30  INFO 28952 --- [| adminclient-1] o.apache.kafka.common.metrics.Metrics    : Metrics reporters closed
+2023-08-16T00:30:50.224+05:30  INFO 28952 --- [    Test worker] .c.LibraryEventControllerIntegrationTest : Starting LibraryEventControllerIntegrationTest using Java 17.0.8 with PID 28952 (started by devendraverma in C:\projects\library-events-producer)
+2023-08-16T00:30:50.233+05:30  INFO 28952 --- [    Test worker] .c.LibraryEventControllerIntegrationTest : The following 1 profile is active: &quot;local&quot;
+2023-08-16T00:30:52.321+05:30  INFO 28952 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2023-08-16T00:30:52.339+05:30  INFO 28952 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-08-16T00:30:52.341+05:30  INFO 28952 --- [    Test worker] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-08-16T00:30:52.567+05:30  INFO 28952 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-08-16T00:30:52.571+05:30  INFO 28952 --- [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2268 ms
+2023-08-16T00:30:53.494+05:30  INFO 28952 --- [    Test worker] o.a.k.clients.admin.AdminClientConfig    : AdminClientConfig values: 
+	bootstrap.servers = [127.0.0.1:62012]
+	client.dns.lookup = use_all_dns_ips
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2023-08-16T00:30:53.507+05:30  INFO 28952 --- [    Test worker] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.3.2
+2023-08-16T00:30:53.507+05:30  INFO 28952 --- [    Test worker] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: b66af662e61082cb
+2023-08-16T00:30:53.507+05:30  INFO 28952 --- [    Test worker] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1692126053507
+2023-08-16T00:30:53.659+05:30  INFO 28952 --- [| adminclient-2] o.a.kafka.common.utils.AppInfoParser     : App info kafka.admin.client for adminclient-2 unregistered
+2023-08-16T00:30:53.665+05:30  INFO 28952 --- [| adminclient-2] o.apache.kafka.common.metrics.Metrics    : Metrics scheduler closed
+2023-08-16T00:30:53.666+05:30  INFO 28952 --- [| adminclient-2] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2023-08-16T00:30:53.666+05:30  INFO 28952 --- [| adminclient-2] o.apache.kafka.common.metrics.Metrics    : Metrics reporters closed
+2023-08-16T00:30:53.710+05:30  INFO 28952 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 62025 (http) with context path ''
+2023-08-16T00:30:53.732+05:30  INFO 28952 --- [    Test worker] .c.LibraryEventControllerIntegrationTest : Started LibraryEventControllerIntegrationTest in 9.855 seconds (process running for 12.138)
+2023-08-16T00:30:54.116+05:30  INFO 28952 --- [er-event-thread] kafka.controller.KafkaController         : [Controller id=0] Processing automatic preferred replica leader election
+2023-08-16T00:30:54.874+05:30  INFO 28952 --- [    Test worker] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 10
+	auto.offset.reset = latest
+	bootstrap.servers = [127.0.0.1:62012]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-group1-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = group1
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.IntegerDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 60000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2023-08-16T00:30:54.974+05:30  INFO 28952 --- [    Test worker] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.3.2
+2023-08-16T00:30:54.975+05:30  INFO 28952 --- [    Test worker] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: b66af662e61082cb
+2023-08-16T00:30:54.975+05:30  INFO 28952 --- [    Test worker] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1692126054974
+2023-08-16T00:30:54.976+05:30  INFO 28952 --- [    Test worker] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-group1-1, groupId=group1] Subscribed to topic(s): library-events
+2023-08-16T00:30:54.992+05:30  INFO 28952 --- [    Test worker] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-group1-1, groupId=group1] Resetting the last seen epoch of partition library-events-0 to 0 since the associated topicId changed from null to QYEU3uZSTteR3b-TIIy75w
+2023-08-16T00:30:54.992+05:30  INFO 28952 --- [    Test worker] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-group1-1, groupId=group1] Resetting the last seen epoch of partition library-events-1 to 0 since the associated topicId changed from null to QYEU3uZSTteR3b-TIIy75w
+2023-08-16T00:30:54.992+05:30  INFO 28952 --- [    Test worker] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-group1-1, groupId=group1] Resetting the last seen epoch of partition library-events-2 to 0 since the associated topicId changed from null to QYEU3uZSTteR3b-TIIy75w
+2023-08-16T00:30:54.994+05:30  INFO 28952 --- [    Test worker] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-group1-1, groupId=group1] Cluster ID: P1jIcEJoRtqBTTqWX0zv6A
+2023-08-16T00:30:55.001+05:30  INFO 28952 --- [quest-handler-1] kafka.zk.AdminZkClient                   : Creating topic __consumer_offsets with configuration {compression.type=producer, cleanup.policy=compact, segment.bytes=104857600} and initial partition assignment HashMap(0 -&gt; ArrayBuffer(0), 1 -&gt; ArrayBuffer(0), 2 -&gt; ArrayBuffer(0), 3 -&gt; ArrayBuffer(0), 4 -&gt; ArrayBuffer(0))
+2023-08-16T00:30:55.013+05:30  INFO 28952 --- [er-event-thread] kafka.controller.KafkaController         : [Controller id=0] New topics: [Set(__consumer_offsets)], deleted topics: [HashSet()], new partition replica assignment [Set(TopicIdReplicaAssignment(__consumer_offsets,Some(0h2fKEOnSGCxZ3oYsVlIyA),HashMap(__consumer_offsets-4 -&gt; ReplicaAssignment(replicas=0, addingReplicas=, removingReplicas=), __consumer_offsets-3 -&gt; ReplicaAssignment(replicas=0, addingReplicas=, removingReplicas=), __consumer_offsets-2 -&gt; ReplicaAssignment(replicas=0, addingReplicas=, removingReplicas=), __consumer_offsets-0 -&gt; ReplicaAssignment(replicas=0, addingReplicas=, removingReplicas=), __consumer_offsets-1 -&gt; ReplicaAssignment(replicas=0, addingReplicas=, removingReplicas=))))]
+2023-08-16T00:30:55.013+05:30  INFO 28952 --- [er-event-thread] kafka.controller.KafkaController         : [Controller id=0] New partition creation callback for __consumer_offsets-4,__consumer_offsets-3,__consumer_offsets-2,__consumer_offsets-0,__consumer_offsets-1
+2023-08-16T00:30:55.013+05:30  INFO 28952 --- [er-event-thread] state.change.logger                      : [Controller id=0 epoch=1] Changed partition __consumer_offsets-4 state from NonExistentPartition to NewPartition with assigned replicas 0
+2023-08-16T00:30:55.014+05:30  INFO 28952 --- [er-event-thread] state.change.logger                      : [Controller id=0 epoch=1] Changed partition __consumer_offsets-3 state from NonExistentPartition to NewPartition with assigned replicas 0
+2023-08-16T00:30:55.014+05:30  INFO 28952 --- [er-event-thread] state.change.logger                      : [Controller id=0 epoch=1] Changed partition __consumer_offsets-2 state from NonExistentPartition to NewPartition with assigned replicas 0
+2023-08-16T00:30:55.014+05:30  INFO 28952 --- [er-event-thread] state.change.logger                      : [Controller id=0 epoch=1] Changed partition __consumer_offsets-0 state from NonExistentPartition to NewPartition with assigned replicas 0
+2023-08-16T00:30:55.014+05:30  INFO 28952 --- [er-event-thread] state.change.logger                      : [Controller id=0 epoch=1] Changed partition __consumer_offsets-1 state from NonExistentPartition to NewPartition with assigned replicas 0
+2023-08-16T00:30:55.014+05:30  INFO 28952 --- [er-event-thread] state.change.logger                      : [Controller id=0 epoch=1] Sending UpdateMetadata request to brokers HashSet() for 0 partitions
+2023-08-16T00:30:55.015+05:30  INFO 28952 --- [er-event-thread] state.change.logger                      : [Controller id=0 epoch=1] Sending UpdateMetadata request to brokers HashSet() for 0 partitions
+2023-08-16T00:30:55.031+05:30  INFO 28952 --- [er-event-thread] state.change.logger                      : [Controller id=0 epoch=1] Changed partition __consumer_offsets-4 from NewPartition to OnlinePartition with state LeaderAndIsr(leader=0, leaderEpoch=0, isr=List(0), leaderRecoveryState=RECOVERED, partitionEpoch=0)
+2023-08-16T00:30:55.032+05:30  INFO 28952 --- [er-event-thread] state.change.logger                      : [Controller id=0 epoch=1] Changed partition __consumer_offsets-3 from NewPartition to OnlinePartition with state LeaderAndIsr(leader=0, leaderEpoch=0, isr=List(0), leaderRecoveryState=RECOVERED, partitionEpoch=0)
+2023-08-16T00:30:55.032+05:30  INFO 28952 --- [er-event-thread] state.change.logger                      : [Controller id=0 epoch=1] Changed partition __consumer_offsets-2 from NewPartition to OnlinePartition with state LeaderAndIsr(leader=0, leaderEpoch=0, isr=List(0), leaderRecoveryState=RECOVERED, partitionEpoch=0)
+2023-08-16T00:30:55.032+05:30  INFO 28952 --- [er-event-thread] state.change.logger                      : [Controller id=0 epoch=1] Changed partition __consumer_offsets-0 from NewPartition to OnlinePartition with state LeaderAndIsr(leader=0, leaderEpoch=0, isr=List(0), leaderRecoveryState=RECOVERED, partitionEpoch=0)
+2023-08-16T00:30:55.032+05:30  INFO 28952 --- [er-event-thread] state.change.logger                      : [Controller id=0 epoch=1] Changed partition __consumer_offsets-1 from NewPartition to OnlinePartition with state LeaderAndIsr(leader=0, leaderEpoch=0, isr=List(0), leaderRecoveryState=RECOVERED, partitionEpoch=0)
+2023-08-16T00:30:55.032+05:30  INFO 28952 --- [er-event-thread] state.change.logger                      : [Controller id=0 epoch=1] Sending LeaderAndIsr request to broker 0 with 5 become-leader and 0 become-follower partitions
+2023-08-16T00:30:55.033+05:30  INFO 28952 --- [er-event-thread] state.change.logger                      : [Controller id=0 epoch=1] Sending UpdateMetadata request to brokers HashSet(0) for 5 partitions
+2023-08-16T00:30:55.034+05:30  INFO 28952 --- [er-event-thread] state.change.logger                      : [Controller id=0 epoch=1] Sending UpdateMetadata request to brokers HashSet() for 0 partitions
+2023-08-16T00:30:55.034+05:30  INFO 28952 --- [quest-handler-7] state.change.logger                      : [Broker id=0] Handling LeaderAndIsr request correlationId 3 from controller 0 for 5 partitions
+2023-08-16T00:30:55.038+05:30  INFO 28952 --- [quest-handler-7] kafka.server.ReplicaFetcherManager       : [ReplicaFetcherManager on broker 0] Removed fetcher for partitions HashSet(__consumer_offsets-4, __consumer_offsets-3, __consumer_offsets-2, __consumer_offsets-0, __consumer_offsets-1)
+2023-08-16T00:30:55.039+05:30  INFO 28952 --- [quest-handler-7] state.change.logger                      : [Broker id=0] Stopped fetchers as part of LeaderAndIsr request correlationId 3 from controller 0 epoch 1 as part of the become-leader transition for 5 partitions
+2023-08-16T00:30:55.062+05:30  INFO 28952 --- [quest-handler-7] kafka.log.UnifiedLog$                    : [LogLoader partition=__consumer_offsets-3, dir=C:\Users\DEVEND~1\AppData\Local\Temp\spring.kafka.caf80c4a-62fd-48a5-9f65-62494aa372232350185087413006166] Loading producer state till offset 0 with message format version 2
+2023-08-16T00:30:55.064+05:30  INFO 28952 --- [quest-handler-7] kafka.log.LogManager                     : Created log for partition __consumer_offsets-3 in C:\Users\DEVEND~1\AppData\Local\Temp\spring.kafka.caf80c4a-62fd-48a5-9f65-62494aa372232350185087413006166\__consumer_offsets-3 with properties {cleanup.policy=compact, compression.type=&quot;producer&quot;, segment.bytes=104857600}
+2023-08-16T00:30:55.065+05:30  INFO 28952 --- [quest-handler-7] kafka.cluster.Partition                  : [Partition __consumer_offsets-3 broker=0] No checkpointed highwatermark is found for partition __consumer_offsets-3
+2023-08-16T00:30:55.066+05:30  INFO 28952 --- [quest-handler-7] kafka.cluster.Partition                  : [Partition __consumer_offsets-3 broker=0] Log loaded for partition __consumer_offsets-3 with initial high watermark 0
+2023-08-16T00:30:55.066+05:30  INFO 28952 --- [quest-handler-7] state.change.logger                      : [Broker id=0] Leader __consumer_offsets-3 with topic id Some(0h2fKEOnSGCxZ3oYsVlIyA) starts at leader epoch 0 from offset 0 with partition epoch 0, high watermark 0, ISR [0], adding replicas [] and removing replicas []. Previous leader epoch was -1.
+2023-08-16T00:30:55.090+05:30  INFO 28952 --- [quest-handler-7] kafka.log.UnifiedLog$                    : [LogLoader partition=__consumer_offsets-2, dir=C:\Users\DEVEND~1\AppData\Local\Temp\spring.kafka.caf80c4a-62fd-48a5-9f65-62494aa372232350185087413006166] Loading producer state till offset 0 with message format version 2
+2023-08-16T00:30:55.092+05:30  INFO 28952 --- [quest-handler-7] kafka.log.LogManager                     : Created log for partition __consumer_offsets-2 in C:\Users\DEVEND~1\AppData\Local\Temp\spring.kafka.caf80c4a-62fd-48a5-9f65-62494aa372232350185087413006166\__consumer_offsets-2 with properties {cleanup.policy=compact, compression.type=&quot;producer&quot;, segment.bytes=104857600}
+2023-08-16T00:30:55.092+05:30  INFO 28952 --- [quest-handler-7] kafka.cluster.Partition                  : [Partition __consumer_offsets-2 broker=0] No checkpointed highwatermark is found for partition __consumer_offsets-2
+2023-08-16T00:30:55.092+05:30  INFO 28952 --- [quest-handler-7] kafka.cluster.Partition                  : [Partition __consumer_offsets-2 broker=0] Log loaded for partition __consumer_offsets-2 with initial high watermark 0
+2023-08-16T00:30:55.092+05:30  INFO 28952 --- [quest-handler-7] state.change.logger                      : [Broker id=0] Leader __consumer_offsets-2 with topic id Some(0h2fKEOnSGCxZ3oYsVlIyA) starts at leader epoch 0 from offset 0 with partition epoch 0, high watermark 0, ISR [0], adding replicas [] and removing replicas []. Previous leader epoch was -1.
+2023-08-16T00:30:55.119+05:30  INFO 28952 --- [quest-handler-7] kafka.log.UnifiedLog$                    : [LogLoader partition=__consumer_offsets-4, dir=C:\Users\DEVEND~1\AppData\Local\Temp\spring.kafka.caf80c4a-62fd-48a5-9f65-62494aa372232350185087413006166] Loading producer state till offset 0 with message format version 2
+2023-08-16T00:30:55.121+05:30  INFO 28952 --- [quest-handler-7] kafka.log.LogManager                     : Created log for partition __consumer_offsets-4 in C:\Users\DEVEND~1\AppData\Local\Temp\spring.kafka.caf80c4a-62fd-48a5-9f65-62494aa372232350185087413006166\__consumer_offsets-4 with properties {cleanup.policy=compact, compression.type=&quot;producer&quot;, segment.bytes=104857600}
+2023-08-16T00:30:55.121+05:30  INFO 28952 --- [quest-handler-7] kafka.cluster.Partition                  : [Partition __consumer_offsets-4 broker=0] No checkpointed highwatermark is found for partition __consumer_offsets-4
+2023-08-16T00:30:55.121+05:30  INFO 28952 --- [quest-handler-7] kafka.cluster.Partition                  : [Partition __consumer_offsets-4 broker=0] Log loaded for partition __consumer_offsets-4 with initial high watermark 0
+2023-08-16T00:30:55.121+05:30  INFO 28952 --- [quest-handler-7] state.change.logger                      : [Broker id=0] Leader __consumer_offsets-4 with topic id Some(0h2fKEOnSGCxZ3oYsVlIyA) starts at leader epoch 0 from offset 0 with partition epoch 0, high watermark 0, ISR [0], adding replicas [] and removing replicas []. Previous leader epoch was -1.
+2023-08-16T00:30:55.149+05:30  INFO 28952 --- [quest-handler-7] kafka.log.UnifiedLog$                    : [LogLoader partition=__consumer_offsets-1, dir=C:\Users\DEVEND~1\AppData\Local\Temp\spring.kafka.caf80c4a-62fd-48a5-9f65-62494aa372232350185087413006166] Loading producer state till offset 0 with message format version 2
+2023-08-16T00:30:55.151+05:30  INFO 28952 --- [quest-handler-7] kafka.log.LogManager                     : Created log for partition __consumer_offsets-1 in C:\Users\DEVEND~1\AppData\Local\Temp\spring.kafka.caf80c4a-62fd-48a5-9f65-62494aa372232350185087413006166\__consumer_offsets-1 with properties {cleanup.policy=compact, compression.type=&quot;producer&quot;, segment.bytes=104857600}
+2023-08-16T00:30:55.151+05:30  INFO 28952 --- [quest-handler-7] kafka.cluster.Partition                  : [Partition __consumer_offsets-1 broker=0] No checkpointed highwatermark is found for partition __consumer_offsets-1
+2023-08-16T00:30:55.151+05:30  INFO 28952 --- [quest-handler-7] kafka.cluster.Partition                  : [Partition __consumer_offsets-1 broker=0] Log loaded for partition __consumer_offsets-1 with initial high watermark 0
+2023-08-16T00:30:55.152+05:30  INFO 28952 --- [quest-handler-7] state.change.logger                      : [Broker id=0] Leader __consumer_offsets-1 with topic id Some(0h2fKEOnSGCxZ3oYsVlIyA) starts at leader epoch 0 from offset 0 with partition epoch 0, high watermark 0, ISR [0], adding replicas [] and removing replicas []. Previous leader epoch was -1.
+2023-08-16T00:30:55.185+05:30  INFO 28952 --- [quest-handler-7] kafka.log.UnifiedLog$                    : [LogLoader partition=__consumer_offsets-0, dir=C:\Users\DEVEND~1\AppData\Local\Temp\spring.kafka.caf80c4a-62fd-48a5-9f65-62494aa372232350185087413006166] Loading producer state till offset 0 with message format version 2
+2023-08-16T00:30:55.187+05:30  INFO 28952 --- [quest-handler-7] kafka.log.LogManager                     : Created log for partition __consumer_offsets-0 in C:\Users\DEVEND~1\AppData\Local\Temp\spring.kafka.caf80c4a-62fd-48a5-9f65-62494aa372232350185087413006166\__consumer_offsets-0 with properties {cleanup.policy=compact, compression.type=&quot;producer&quot;, segment.bytes=104857600}
+2023-08-16T00:30:55.187+05:30  INFO 28952 --- [quest-handler-7] kafka.cluster.Partition                  : [Partition __consumer_offsets-0 broker=0] No checkpointed highwatermark is found for partition __consumer_offsets-0
+2023-08-16T00:30:55.187+05:30  INFO 28952 --- [quest-handler-7] kafka.cluster.Partition                  : [Partition __consumer_offsets-0 broker=0] Log loaded for partition __consumer_offsets-0 with initial high watermark 0
+2023-08-16T00:30:55.188+05:30  INFO 28952 --- [quest-handler-7] state.change.logger                      : [Broker id=0] Leader __consumer_offsets-0 with topic id Some(0h2fKEOnSGCxZ3oYsVlIyA) starts at leader epoch 0 from offset 0 with partition epoch 0, high watermark 0, ISR [0], adding replicas [] and removing replicas []. Previous leader epoch was -1.
+2023-08-16T00:30:55.201+05:30  INFO 28952 --- [quest-handler-7] k.coordinator.group.GroupCoordinator     : [GroupCoordinator 0]: Elected as the group coordinator for partition 3 in epoch 0
+2023-08-16T00:30:55.202+05:30  INFO 28952 --- [quest-handler-7] k.c.group.GroupMetadataManager           : [GroupMetadataManager brokerId=0] Scheduling loading of offsets and group metadata from __consumer_offsets-3 for epoch 0
+2023-08-16T00:30:55.205+05:30  INFO 28952 --- [quest-handler-7] k.coordinator.group.GroupCoordinator     : [GroupCoordinator 0]: Elected as the group coordinator for partition 2 in epoch 0
+2023-08-16T00:30:55.205+05:30  INFO 28952 --- [quest-handler-7] k.c.group.GroupMetadataManager           : [GroupMetadataManager brokerId=0] Scheduling loading of offsets and group metadata from __consumer_offsets-2 for epoch 0
+2023-08-16T00:30:55.205+05:30  INFO 28952 --- [quest-handler-7] k.coordinator.group.GroupCoordinator     : [GroupCoordinator 0]: Elected as the group coordinator for partition 4 in epoch 0
+2023-08-16T00:30:55.205+05:30  INFO 28952 --- [quest-handler-7] k.c.group.GroupMetadataManager           : [GroupMetadataManager brokerId=0] Scheduling loading of offsets and group metadata from __consumer_offsets-4 for epoch 0
+2023-08-16T00:30:55.205+05:30  INFO 28952 --- [quest-handler-7] k.coordinator.group.GroupCoordinator     : [GroupCoordinator 0]: Elected as the group coordinator for partition 1 in epoch 0
+2023-08-16T00:30:55.205+05:30  INFO 28952 --- [quest-handler-7] k.c.group.GroupMetadataManager           : [GroupMetadataManager brokerId=0] Scheduling loading of offsets and group metadata from __consumer_offsets-1 for epoch 0
+2023-08-16T00:30:55.205+05:30  INFO 28952 --- [quest-handler-7] k.coordinator.group.GroupCoordinator     : [GroupCoordinator 0]: Elected as the group coordinator for partition 0 in epoch 0
+2023-08-16T00:30:55.205+05:30  INFO 28952 --- [quest-handler-7] k.c.group.GroupMetadataManager           : [GroupMetadataManager brokerId=0] Scheduling loading of offsets and group metadata from __consumer_offsets-0 for epoch 0
+2023-08-16T00:30:55.206+05:30  INFO 28952 --- [quest-handler-7] state.change.logger                      : [Broker id=0] Finished LeaderAndIsr request in 172ms correlationId 3 from controller 0 for 5 partitions
+2023-08-16T00:30:55.208+05:30  INFO 28952 --- [quest-handler-6] state.change.logger                      : [Broker id=0] Add 5 partitions and deleted 0 partitions from metadata cache in response to UpdateMetadata request sent by controller 0 epoch 1 with correlation id 4
+2023-08-16T00:30:55.215+05:30  INFO 28952 --- [adata-manager-0] k.c.group.GroupMetadataManager           : [GroupMetadataManager brokerId=0] Finished loading offsets and group metadata from __consumer_offsets-3 in 10 milliseconds for epoch 0, of which 3 milliseconds was spent in the scheduler.
+2023-08-16T00:30:55.216+05:30  INFO 28952 --- [adata-manager-0] k.c.group.GroupMetadataManager           : [GroupMetadataManager brokerId=0] Finished loading offsets and group metadata from __consumer_offsets-2 in 11 milliseconds for epoch 0, of which 11 milliseconds was spent in the scheduler.
+2023-08-16T00:30:55.216+05:30  INFO 28952 --- [adata-manager-0] k.c.group.GroupMetadataManager           : [GroupMetadataManager brokerId=0] Finished loading offsets and group metadata from __consumer_offsets-4 in 11 milliseconds for epoch 0, of which 11 milliseconds was spent in the scheduler.
+2023-08-16T00:30:55.216+05:30  INFO 28952 --- [adata-manager-0] k.c.group.GroupMetadataManager           : [GroupMetadataManager brokerId=0] Finished loading offsets and group metadata from __consumer_offsets-1 in 11 milliseconds for epoch 0, of which 11 milliseconds was spent in the scheduler.
+2023-08-16T00:30:55.217+05:30  INFO 28952 --- [adata-manager-0] k.c.group.GroupMetadataManager           : [GroupMetadataManager brokerId=0] Finished loading offsets and group metadata from __consumer_offsets-0 in 12 milliseconds for epoch 0, of which 12 milliseconds was spent in the scheduler.
+2023-08-16T00:30:55.292+05:30  INFO 28952 --- [    Test worker] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group1-1, groupId=group1] Discovered group coordinator localhost:62012 (id: 2147483647 rack: null)
+2023-08-16T00:30:55.300+05:30  INFO 28952 --- [    Test worker] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group1-1, groupId=group1] (Re-)joining group
+2023-08-16T00:30:55.328+05:30  INFO 28952 --- [quest-handler-4] k.coordinator.group.GroupCoordinator     : [GroupCoordinator 0]: Dynamic member with unknown member id joins group group1 in Empty state. Created a new member id consumer-group1-1-c8b3d29d-8d55-4492-8fd5-e9b202f6b1d9 and request the member to rejoin with this id.
+2023-08-16T00:30:55.337+05:30  INFO 28952 --- [    Test worker] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group1-1, groupId=group1] Request joining group due to: need to re-join with the given member-id: consumer-group1-1-c8b3d29d-8d55-4492-8fd5-e9b202f6b1d9
+2023-08-16T00:30:55.337+05:30  INFO 28952 --- [    Test worker] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group1-1, groupId=group1] Request joining group due to: rebalance failed due to 'The group member needs to have a valid member id before actually entering a consumer group.' (MemberIdRequiredException)
+2023-08-16T00:30:55.337+05:30  INFO 28952 --- [    Test worker] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group1-1, groupId=group1] (Re-)joining group
+2023-08-16T00:30:55.349+05:30  INFO 28952 --- [quest-handler-2] k.coordinator.group.GroupCoordinator     : [GroupCoordinator 0]: Preparing to rebalance group group1 in state PreparingRebalance with old generation 0 (__consumer_offsets-0) (reason: Adding new member consumer-group1-1-c8b3d29d-8d55-4492-8fd5-e9b202f6b1d9 with group instance id None; client reason: rebalance failed due to MemberIdRequiredException)
+2023-08-16T00:30:55.369+05:30  INFO 28952 --- [cutor-Rebalance] k.coordinator.group.GroupCoordinator     : [GroupCoordinator 0]: Stabilized group group1 generation 1 (__consumer_offsets-0) with 1 members
+2023-08-16T00:30:55.373+05:30  INFO 28952 --- [    Test worker] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group1-1, groupId=group1] Successfully joined group with generation Generation{generationId=1, memberId='consumer-group1-1-c8b3d29d-8d55-4492-8fd5-e9b202f6b1d9', protocol='range'}
+2023-08-16T00:30:55.376+05:30  INFO 28952 --- [    Test worker] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group1-1, groupId=group1] Finished assignment for group at generation 1: {consumer-group1-1-c8b3d29d-8d55-4492-8fd5-e9b202f6b1d9=Assignment(partitions=[library-events-0, library-events-1, library-events-2])}
+2023-08-16T00:30:55.393+05:30  INFO 28952 --- [quest-handler-1] k.coordinator.group.GroupCoordinator     : [GroupCoordinator 0]: Assignment received from leader consumer-group1-1-c8b3d29d-8d55-4492-8fd5-e9b202f6b1d9 for group group1 for generation 1. The group has 1 members, 0 of which are static.
+2023-08-16T00:30:55.509+05:30  INFO 28952 --- [    Test worker] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group1-1, groupId=group1] Successfully synced group in generation Generation{generationId=1, memberId='consumer-group1-1-c8b3d29d-8d55-4492-8fd5-e9b202f6b1d9', protocol='range'}
+2023-08-16T00:30:55.510+05:30  INFO 28952 --- [    Test worker] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group1-1, groupId=group1] Notifying assignor about the new Assignment(partitions=[library-events-0, library-events-1, library-events-2])
+2023-08-16T00:30:55.517+05:30  INFO 28952 --- [    Test worker] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group1-1, groupId=group1] Adding newly assigned partitions: library-events-0, library-events-1, library-events-2
+2023-08-16T00:30:55.545+05:30  INFO 28952 --- [    Test worker] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group1-1, groupId=group1] Found no committed offset for partition library-events-1
+2023-08-16T00:30:55.545+05:30  INFO 28952 --- [    Test worker] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group1-1, groupId=group1] Found no committed offset for partition library-events-2
+2023-08-16T00:30:55.545+05:30  INFO 28952 --- [    Test worker] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group1-1, groupId=group1] Found no committed offset for partition library-events-0
+2023-08-16T00:30:55.570+05:30  INFO 28952 --- [    Test worker] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=consumer-group1-1, groupId=group1] Resetting offset for partition library-events-1 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:62012 (id: 0 rack: null)], epoch=0}}.
+2023-08-16T00:30:55.572+05:30  INFO 28952 --- [    Test worker] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=consumer-group1-1, groupId=group1] Resetting offset for partition library-events-2 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:62012 (id: 0 rack: null)], epoch=0}}.
+2023-08-16T00:30:55.572+05:30  INFO 28952 --- [    Test worker] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=consumer-group1-1, groupId=group1] Resetting offset for partition library-events-0 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:62012 (id: 0 rack: null)], epoch=0}}.
+2023-08-16T00:30:55.592+05:30  INFO 28952 --- [    Test worker] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=consumer-group1-1, groupId=group1] Seeking to earliest offset of partition library-events-0
+2023-08-16T00:30:55.592+05:30  INFO 28952 --- [    Test worker] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=consumer-group1-1, groupId=group1] Seeking to earliest offset of partition library-events-1
+2023-08-16T00:30:55.593+05:30  INFO 28952 --- [    Test worker] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=consumer-group1-1, groupId=group1] Seeking to earliest offset of partition library-events-2
+2023-08-16T00:30:55.905+05:30  INFO 28952 --- [o-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-08-16T00:30:55.905+05:30  INFO 28952 --- [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-08-16T00:30:55.906+05:30  INFO 28952 --- [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-08-16T00:30:56.139+05:30  INFO 28952 --- [o-auto-1-exec-1] c.l.controller.LibraryEventController    : libraryEvent : {} LibraryEvent[libraryEventId=null, libraryEventType=NEW, book=Book[bookId=123, bookName=Dilip, bookAuthor=Kafka Using Spring Boot]]
+2023-08-16T00:30:56.154+05:30  INFO 28952 --- [o-auto-1-exec-1] o.a.k.clients.producer.ProducerConfig    : ProducerConfig values: 
+	acks = -1
+	batch.size = 16384
+	bootstrap.servers = [127.0.0.1:62012]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = producer-1
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.IntegerSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.adaptive.partitioning.enable = true
+	partitioner.availability.timeout.ms = 0
+	partitioner.class = null
+	partitioner.ignore.keys = false
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 10
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2023-08-16T00:30:56.176+05:30  INFO 28952 --- [o-auto-1-exec-1] o.a.k.clients.producer.KafkaProducer     : [Producer clientId=producer-1] Instantiated an idempotent producer.
+2023-08-16T00:30:56.220+05:30  INFO 28952 --- [o-auto-1-exec-1] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.3.2
+2023-08-16T00:30:56.220+05:30  INFO 28952 --- [o-auto-1-exec-1] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: b66af662e61082cb
+2023-08-16T00:30:56.220+05:30  INFO 28952 --- [o-auto-1-exec-1] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1692126056219
+2023-08-16T00:30:56.236+05:30  INFO 28952 --- [ad | producer-1] org.apache.kafka.clients.Metadata        : [Producer clientId=producer-1] Resetting the last seen epoch of partition library-events-0 to 0 since the associated topicId changed from null to QYEU3uZSTteR3b-TIIy75w
+2023-08-16T00:30:56.237+05:30  INFO 28952 --- [ad | producer-1] org.apache.kafka.clients.Metadata        : [Producer clientId=producer-1] Resetting the last seen epoch of partition library-events-2 to 0 since the associated topicId changed from null to QYEU3uZSTteR3b-TIIy75w
+2023-08-16T00:30:56.237+05:30  INFO 28952 --- [ad | producer-1] org.apache.kafka.clients.Metadata        : [Producer clientId=producer-1] Resetting the last seen epoch of partition library-events-1 to 0 since the associated topicId changed from null to QYEU3uZSTteR3b-TIIy75w
+2023-08-16T00:30:56.237+05:30  INFO 28952 --- [ad | producer-1] org.apache.kafka.clients.Metadata        : [Producer clientId=producer-1] Cluster ID: P1jIcEJoRtqBTTqWX0zv6A
+2023-08-16T00:30:56.274+05:30  INFO 28952 --- [o-auto-1-exec-1] c.l.controller.LibraryEventController    : after sending libraryEvent 
+2023-08-16T00:30:56.292+05:30  INFO 28952 --- [er-event-thread] kafka.controller.KafkaController         : [Controller id=0] Acquired new producerId block ProducerIdsBlock(assignedBrokerId=0, firstProducerId=0, size=1000) by writing to Zk with path version 1
+2023-08-16T00:30:56.299+05:30  INFO 28952 --- [ad | producer-1] o.a.k.c.p.internals.TransactionManager   : [Producer clientId=producer-1] ProducerId set to 0 with epoch 0
+2023-08-16T00:30:56.326+05:30  INFO 28952 --- [    Test worker] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=consumer-group1-1, groupId=group1] Resetting offset for partition library-events-1 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:62012 (id: 0 rack: null)], epoch=0}}.
+2023-08-16T00:30:56.327+05:30  INFO 28952 --- [    Test worker] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=consumer-group1-1, groupId=group1] Resetting offset for partition library-events-2 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:62012 (id: 0 rack: null)], epoch=0}}.
+2023-08-16T00:30:56.327+05:30  INFO 28952 --- [    Test worker] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=consumer-group1-1, groupId=group1] Resetting offset for partition library-events-0 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:62012 (id: 0 rack: null)], epoch=0}}.
+2023-08-16T00:30:56.370+05:30  INFO 28952 --- [ad | producer-1] c.l.producer.LibraryEventsProducer       : message sent successfully for the key : null and value is {&quot;libraryEventId&quot;:null,&quot;libraryEventType&quot;:&quot;NEW&quot;,&quot;book&quot;:{&quot;bookId&quot;:123,&quot;bookName&quot;:&quot;Dilip&quot;,&quot;bookAuthor&quot;:&quot;Kafka Using Spring Boot&quot;}} and partition is 2 
+libraryEventActual : LibraryEvent[libraryEventId=null, libraryEventType=NEW, book=Book[bookId=123, bookName=Dilip, bookAuthor=Kafka Using Spring Boot]]
+2023-08-16T00:30:56.393+05:30  INFO 28952 --- [    Test worker] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group1-1, groupId=group1] Revoke previously assigned partitions library-events-0, library-events-1, library-events-2
+2023-08-16T00:30:56.394+05:30  INFO 28952 --- [    Test worker] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group1-1, groupId=group1] Member consumer-group1-1-c8b3d29d-8d55-4492-8fd5-e9b202f6b1d9 sending LeaveGroup request to coordinator localhost:62012 (id: 2147483647 rack: null) due to the consumer is being closed
+2023-08-16T00:30:56.396+05:30  INFO 28952 --- [    Test worker] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group1-1, groupId=group1] Resetting generation and member id due to: consumer pro-actively leaving the group
+2023-08-16T00:30:56.396+05:30  INFO 28952 --- [    Test worker] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group1-1, groupId=group1] Request joining group due to: consumer pro-actively leaving the group
+2023-08-16T00:30:56.403+05:30  INFO 28952 --- [quest-handler-2] k.coordinator.group.GroupCoordinator     : [GroupCoordinator 0]: Preparing to rebalance group group1 in state PreparingRebalance with old generation 1 (__consumer_offsets-0) (reason: Removing member consumer-group1-1-c8b3d29d-8d55-4492-8fd5-e9b202f6b1d9 on LeaveGroup; client reason: the consumer is being closed)
+2023-08-16T00:30:56.405+05:30  INFO 28952 --- [quest-handler-2] k.coordinator.group.GroupCoordinator     : [GroupCoordinator 0]: Group group1 with generation 2 is now empty (__consumer_offsets-0)
+2023-08-16T00:30:56.408+05:30  INFO 28952 --- [quest-handler-2] k.coordinator.group.GroupCoordinator     : [GroupCoordinator 0]: Member MemberMetadata(memberId=consumer-group1-1-c8b3d29d-8d55-4492-8fd5-e9b202f6b1d9, groupInstanceId=None, clientId=consumer-group1-1, clientHost=/127.0.0.1, sessionTimeoutMs=60000, rebalanceTimeoutMs=300000, supportedProtocols=List(range, cooperative-sticky)) has left group group1 through explicit `LeaveGroup`; client reason: the consumer is being closed
+2023-08-16T00:30:56.411+05:30  INFO 28952 --- [    Test worker] o.apache.kafka.common.metrics.Metrics    : Metrics scheduler closed
+2023-08-16T00:30:56.411+05:30  INFO 28952 --- [    Test worker] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2023-08-16T00:30:56.411+05:30  INFO 28952 --- [    Test worker] o.apache.kafka.common.metrics.Metrics    : Metrics reporters closed
+2023-08-16T00:30:56.414+05:30  INFO 28952 --- [    Test worker] o.a.kafka.common.utils.AppInfoParser     : App info kafka.consumer for consumer-group1-1 unregistered
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 8.2.1</a> at Aug 16, 2023, 12:30:57 AM</p>
+</div>
+</div>
+</body>
+</html>
